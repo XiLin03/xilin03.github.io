@@ -41,11 +41,18 @@ Skills
   * SolidWorks
   * Auto CAD
 
+Projects
+======
+  <ul>{% for post in site.projects reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+Service
 ======
 * NCSU GEARS 2023 Student Ambassador
