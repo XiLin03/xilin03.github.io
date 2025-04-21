@@ -13,3 +13,15 @@ I am a Master student in Robotics, Johns Hopkins Univesity, working on Athletic 
 I am intetested in the intersection of Machine Learning, and Control. My research focuses on the locomotion of varieties of robots on different environment.
 
 I am looking for research and intern opportunity right now.
+
+## Projects
+
+  <ul>{% for post in site.projects reversed %}
+    {% include archive-single.html %}
+  {% endfor %}</ul>
+
+## Publications
+
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}</ul>
