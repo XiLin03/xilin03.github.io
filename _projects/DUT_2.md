@@ -1,3 +1,4 @@
+---
 title: "Research on Object Detection of Robotic based on Convolutional Neural Networks "
 collection: projects
 permalink: /projects/DUT_2
