@@ -8,38 +8,38 @@ redirect_from:
 ---
 
 {% include base_path %}
+PDF
+[English Version](/files/Resume_XiLin) , [中文版](/files/简历_林曦)
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* B.S. in Mechanical Engineering, Dalian University of Technology (Joint Program with UC,Irvine), 2025
+* B.S. Minor in Automation, Dalian University of Technology, 2024
+* M.S. in Robotics, Johns Hopkins University, 2027
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Winter & Spring 2025: Embodied AI Intern
+  * Wuxi Research Institute of Applied Technologies, Tsinghua Univeristy
+  * Duties included: Vision Perception and Locomotion Control of Biped Robots for Complex Terrain
+  * Supervisor: [Associate Professor Wenchao Ding](https://wenchaoding.github.io/)
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
+* Summer & Fall 2024: Research Intern
+  * Johns Hopkins University
   * Duties included: Tagging issues
-  * Supervisor: Professor Git
+  * Supervisor: [Professor Chen Li](https://me.jhu.edu/faculty/chen-li/)
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming
+  * Python(Pytorch / OpenCV)
+  * C++(ROS1 / ROS2)
+* Robot
+  * Isaac Gym(RL Training)
+  * MATLAB(Simulation)
+* Mechanical Design
+  * SolidWorks
+  * Auto CAD
 
 Publications
 ======
@@ -61,4 +61,4 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* NCSU GEARS 2023 Student Ambassador
