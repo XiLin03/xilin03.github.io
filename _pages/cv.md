@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 PDF
-[English Version](/files/Resume_XiLin) , [中文版](/files/简历_林曦)
+[English Version](/files/Resume_XiLin.pdf) , [中文版](/files/简历_林曦.pdf)
 
 Education
 ======
