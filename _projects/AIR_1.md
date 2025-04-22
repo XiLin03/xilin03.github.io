@@ -3,7 +3,7 @@ title: "Vision Perception and Locomotion Control of Biped Robots for Complex Ter
 collection: projects
 permalink: /projects/AIR_1
 excerpt: 'Tsinghua University | Embodied AI Research Intern'
-date: 2025-01
+date: 2025-01-01
 location: 'Wuxi, China'
 ---
 With [Prof. Wenchao Ding](https://wenchaoding.github.io/personal/index.html) 
