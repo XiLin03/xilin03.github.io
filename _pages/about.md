@@ -20,7 +20,7 @@ I am looking for research and intern opportunity right now.
   - Humanoid Robots, Reinforcement Learning, Locomotion
 
 
-- Johns Hopkins University @ Research Intern
+- Research Intern @ Johns Hopkins University
   - 2024.07 - 2024.12
   - Cockroach Robots, Deep Learning(LSTM), PID, Locomotion
 
