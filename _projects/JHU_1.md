@@ -3,7 +3,7 @@ title: "The Modeling and Experiments of Obstacle Traversal of Legged Robots "
 collection: projects
 permalink: /projects/JHU_1
 excerpt: 'Johns Hopkins University | Research Intern'
-date: 2024-07 - 2024-12
+date: 2024-12-01
 location: 'Baltimore, U.S.'
 ---
 With Associate [Prof. Chen Li](https://engineering.jhu.edu/faculty/chen-li/) 
