@@ -15,23 +15,28 @@ I am looking for research and intern opportunity right now.
 
 ## Experience
 
-- **2025.01 - Present** Tsinghua University -  Embodied AI Research Intern
+- Embodied AI Research Intern @ Tsinghua University
+  - 2025.01 - Present
   - Humanoid Robots, Reinforcement Learning, Locomotion
 
 
-- **2024.07 - 2024.12** Johns Hopkins University - Research Intern
+- Johns Hopkins University @ Research Intern
+  - 2024.07 - 2024.12
   - Cockroach Robots, Deep Learning(LSTM), PID, Locomotion
 
 
-- **2023.06 - 2024.09** North Carolina State University - Summer Research School
+- North Carolina State University @ Summer Research School
+  - 2023.06 - 2024.09
   - Quadruped Robot, Exoskeleton Robot, Reinforcement Learning
 
 
-- **2024.10 - 2024.06** Dalian University of Technology - Research Assistant 2
+- Dalian University of Technology @ Research Assistant 2
+  - 2024.10 - 2024.06
   - Drones, SLAM, Object Detection, CNN
 
 
-- **2022.10 - 2024.05** Dalian University of Technology - Research Assistant 1
+- Dalian University of Technology @ Research Assistant 1
+  - 2022.10 - 2024.05
   - SolidWorks
 
 
