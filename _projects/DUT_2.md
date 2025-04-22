@@ -3,7 +3,7 @@ title: "Research on Object Detection of Robotic based on Convolutional Neural Ne
 collection: projects
 permalink: /projects/DUT_2
 excerpt: 'Dalian University of Technology | 1 EI Essay'
-date: 2022-10 - 2023-06
+date: 2023-06-01
 location: 'Dalian, China'
 ---
 * Algorithm Optimization: Adjusted anchor boxes, implemented multi-scale training, and added adaptive convolution layers to improve detection on VOC2012 dataset. 
