@@ -25,17 +25,17 @@ I am looking for research and intern opportunity right now.
   - Cockroach Robots, Deep Learning(LSTM), PID, Locomotion
 
 
-- North Carolina State University @ Summer Research School
+- Summer Research School @ North Carolina State University
   - 2023.06 - 2024.09
   - Quadruped Robot, Exoskeleton Robot, Reinforcement Learning
 
 
-- Dalian University of Technology @ Research Assistant 2
+- Research Assistant 2 @ Dalian University of Technology
   - 2024.10 - 2024.06
   - Drones, SLAM, Object Detection, CNN
 
 
-- Dalian University of Technology @ Research Assistant 1
+- Research Assistant 1 @ Dalian University of Technology
   - 2022.10 - 2024.05
   - SolidWorks
 
