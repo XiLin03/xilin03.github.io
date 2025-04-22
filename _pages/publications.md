@@ -1,9 +1,16 @@
 ---
 layout: archive
 title: "Publications"
+type: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+
+{% include base_path %}
+
+{% for post in site.projects reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}
 
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
