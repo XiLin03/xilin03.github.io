@@ -2,7 +2,7 @@
 title: "Robotics: Design, Control and Deep Learning"
 collection: projects
 permalink: /projects/NCSU_1
-excerpt: 'North Carolina State University | Summer Research Program'
+excerpt: 'North Carolina State University - Summer Research Program'
 date: 2023-06-20
 location: 'Raleigh, U.S.'
 ---
