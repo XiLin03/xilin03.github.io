@@ -3,7 +3,7 @@ title: "Robotics: Design, Control and Deep Learning"
 collection: projects
 permalink: /projects/NCSU_1
 excerpt: 'North Carolina State University | Summer Research Program'
-date: 2023-06 - 2023-08
+date: 2023-08-01
 location: 'Raleigh, U.S.'
 ---
 With [Prof. Su Hao](https://haosu-robotics.github.io/) 
