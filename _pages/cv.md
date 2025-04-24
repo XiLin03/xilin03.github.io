@@ -21,7 +21,7 @@ Work experience
 ======
 * Winter & Spring 2025: Embodied AI Intern
   * Wuxi Research Institute of Applied Technologies, Tsinghua Univeristy
-  * Duties included: 1
+  * Duties included: 
     * Terrain System Developmet
     * Gait Algorithm Optimization
     * sim2real Validation
@@ -29,7 +29,7 @@ Work experience
 
 * Summer & Fall 2024: Research Intern
   * Johns Hopkins University
-  * Duties included: T
+  * Duties included: 
     * Simulation System Building
     * LSTM motion modeling
     * Data generation system
