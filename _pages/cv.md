@@ -21,12 +21,18 @@ Work experience
 ======
 * Winter & Spring 2025: Embodied AI Intern
   * Wuxi Research Institute of Applied Technologies, Tsinghua Univeristy
-  * Duties included: Vision Perception and Locomotion Control of Biped Robots for Complex Terrain
+  * Duties included: 1
+    * Terrain System Developmet
+    * Gait Algorithm Optimization
+    * sim2real Validation
   * Supervisor: [Associate Professor Wenchao Ding](https://wenchaoding.github.io/)
 
 * Summer & Fall 2024: Research Intern
   * Johns Hopkins University
-  * Duties included: Tagging issues
+  * Duties included: T
+    * Simulation System Building
+    * LSTM motion modeling
+    * Data generation system
   * Supervisor: [Professor Chen Li](https://me.jhu.edu/faculty/chen-li/)
   
 Skills
