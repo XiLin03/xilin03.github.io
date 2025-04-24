@@ -25,7 +25,7 @@ Work experience
     * Terrain System Developmet
     * Gait Algorithm Optimization
     * sim2real Validation
-  * Supervisor: [Associate Professor Wenchao Ding](https://wenchaoding.github.io/)
+  * Supervisor: [Prof. Wenchao Ding](https://wenchaoding.github.io/)
 
 * Summer & Fall 2024: Research Intern
   * Johns Hopkins University
@@ -33,7 +33,7 @@ Work experience
     * Simulation System Building
     * LSTM motion modeling
     * Data generation system
-  * Supervisor: [Professor Chen Li](https://me.jhu.edu/faculty/chen-li/)
+  * Supervisor: [Prof. Chen Li](https://me.jhu.edu/faculty/chen-li/)
   
 Skills
 ======
