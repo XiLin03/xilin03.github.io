@@ -15,7 +15,7 @@ Education
 ======
 * B.S. Minor in Automation, Dalian University of Technology, 2024
 * B.S. in Mechanical Engineering, Dalian University of Technology (Joint Program with UC,Irvine), 2025
-* M.S. in Robotics, Johns Hopkins University, 2027
+* M.S. in Robotics, National University of Singapore, 2027
 
 Work experience
 ======
