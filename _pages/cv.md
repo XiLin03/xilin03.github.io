@@ -25,7 +25,7 @@ Work experience
     * Terrain System Developmet
     * Gait Algorithm Optimization
     * sim2real Validation
-  * Supervisor: [Prof. Wenchao Ding](https://wenchaoding.github.io/)
+  * Supervisor: [Prof. Xingyu Liu](https://xingyul.github.io/)
 
 * Summer & Fall 2024: Research Intern
   * Johns Hopkins University
