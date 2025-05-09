@@ -17,7 +17,7 @@ I am looking for research and intern opportunity now.
 
 - Embodied AI Research Intern @ Tsinghua University
   - 2025.01 - Present
-  - Humanoid Robots, Reinforcement Learning, Locomotion
+  - Humanoid Robots, Reinforcement Learning, VLA, SLAM, Locomotion
 
 
 - Research Intern @ Johns Hopkins University
