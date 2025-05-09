@@ -23,8 +23,8 @@ Work experience
   * Wuxi Research Institute of Applied Technologies, Tsinghua Univeristy
   * Duties included: 
     * Terrain System Developmet
-    * Gait Algorithm Optimization
-    * sim2real Validation
+    * Hierarchical Control Framework
+    * VLA-SLAM Integration
   * Supervisor: [Prof. Xingyu Liu](https://xingyul.github.io/)
 
 * Summer & Fall 2024: Research Intern
