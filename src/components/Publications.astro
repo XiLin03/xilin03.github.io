@@ -6,9 +6,9 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
 {
   hasPublications && (
     <section id="publications" class="p-8 sm:p-12 md:p-16 lg:p-24">
-      <div class="grid grid-cols-1 lg:grid-cols-[220px_minmax(0,1fr)] gap-8 lg:gap-12 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-[300px_minmax(0,1fr)] xl:grid-cols-[360px_minmax(0,1fr)] gap-8 lg:gap-12 items-start">
         <div>
-          <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-gray-900">
             Publications
           </h2>
           <div class="w-[75px] h-[5px] mt-2 rounded-full" style={`background-color: ${siteConfig.accentColor}`}></div>
@@ -17,8 +17,8 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
         <div class="space-y-8">
           {siteConfig.publications.map((publication) => (
             <article class="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm">
-              <div class="flex flex-col md:flex-row">
-                <div class="md:w-[288px] md:flex-none border-b border-gray-200 bg-gray-50 p-4 md:border-b-0 md:border-r">
+              <div class="flex flex-col md:flex-row md:items-start">
+                <div class="md:w-[260px] md:flex-none md:self-start border-b border-gray-200 bg-gray-50 p-4 md:border-b-0 md:border-r">
                   <div class="flex aspect-[16/9] items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-white p-3">
                     <img
                       src={publication.image}
