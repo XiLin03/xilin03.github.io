@@ -4,11 +4,12 @@ export const siteConfig = {
   description:
     "Personal academic website of Xi Lin, focused on embodied AI, world models, vision-language action and navigation, and robot control.",
   accentColor: "#002FA7",
-  heroInterestsText: "Research Interests: WAM\u4e28VLA\u4e28WBC.",
+  heroInterestsText: "Research Interests: WAM\u4e28VLA\u4e28VLN\u4e28WBC.",
   heroStatusText:
     "Currently seeking remote research internship opportunities \u{1F44B}",
   social: {
-    email: "xilin03@outlook.com",
+    email: "xlin49@jhu.edu",
+    emailSecondary: "xilin03@outlook.com",
     linkedin: "https://linkedin.com/in/xilin-jhu",
     github: "https://github.com/xilin03",
     cv: "/Xi-Lin-Resume.pdf",

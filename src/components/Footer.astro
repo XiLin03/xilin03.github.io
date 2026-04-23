@@ -11,6 +11,16 @@ import { siteConfig } from "../config";
         <p class="max-w-xl text-sm leading-relaxed text-gray-500">
           Experience across whole-body control, embodied navigation, and world-model-oriented robotics systems. Currently seeking remote research internship opportunities.
         </p>
+        <div class="flex flex-wrap gap-3 text-sm text-gray-600">
+          <a href={`mailto:${siteConfig.social.email}`} class="hover:text-gray-900 transition-colors">{siteConfig.social.email}</a>
+          {
+            siteConfig.social?.emailSecondary && (
+              <a href={`mailto:${siteConfig.social.emailSecondary}`} class="hover:text-gray-900 transition-colors">
+                {siteConfig.social.emailSecondary}
+              </a>
+            )
+          }
+        </div>
       </div>
       <div class="flex items-center gap-5 text-sm font-medium text-gray-600">
         <a href={`mailto:${siteConfig.social.email}`} class="hover:text-gray-900 transition-colors">Email</a>
