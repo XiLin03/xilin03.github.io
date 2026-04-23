@@ -42,13 +42,11 @@ import { siteConfig } from "../config";
       >
         {siteConfig.title}
       </p>
-      <div class="mt-8 flex flex-wrap gap-3 animate-fade-in animation-delay-400">
-        {siteConfig.heroInterests.map((item) => (
-          <span class="rounded-full border border-gray-200 bg-white/80 px-4 py-2 text-sm font-medium text-gray-700">
-            {item}
-          </span>
-        ))}
-      </div>
+      <p
+        class="mt-8 max-w-3xl text-lg leading-relaxed text-gray-600 animate-fade-in animation-delay-400"
+      >
+        {siteConfig.heroInterestsText}
+      </p>
       <div class="mt-8 flex flex-wrap gap-4 animate-fade-in animation-delay-600">
         <a
           href={siteConfig.social.cv}
