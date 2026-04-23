@@ -1,12 +1,10 @@
 export const siteConfig = {
   name: "Xi Lin",
-  title: "Robotics M.S. Student at Johns Hopkins University",
+  title: "M.S. Robotics @ JHU",
   description:
-    "Personal academic website of Xi Lin, focused on embodied AI, vision-language navigation, and robot learning.",
+    "Personal academic website of Xi Lin, focused on robotics, embodied AI, whole-body control, vision-language navigation, and world models.",
   accentColor: "#2563eb",
-  heroLabel: "Embodied AI | Robot Learning | Vision-Language Navigation",
-  heroDescription:
-    "I study embodied AI systems that combine perception, planning, and control for robust long-horizon behavior. I am actively seeking remote research opportunities in navigation, world models, multimodal reasoning, and deployable robot learning.",
+  heroInterests: ["WBC", "VLN", "World Models"],
   social: {
     email: "xilin03@outlook.com",
     linkedin: "https://linkedin.com/in/xilin-jhu",
@@ -14,83 +12,48 @@ export const siteConfig = {
     cv: "/Xi-Lin-Resume.pdf",
   },
   about: [
-    "I am currently an M.S. student in Robotics at Johns Hopkins University. My recent work spans vision-language navigation, object-goal navigation, humanoid control, and multimodal robot systems.",
-    "Across internships at JD.com, Xiaomi Robotics, and AIR Tsinghua, I have worked on zero-shot navigation, world-model-integrated VLN, simulation-to-real robot learning, and motion retargeting pipelines.",
-    "I am particularly interested in research that makes embodied foundation models more reliable, efficient, and useful in real-world robotic settings.",
-  ],
-  researchInterests: [
-    "Embodied AI",
-    "Vision-Language Navigation",
-    "ObjectNav and Semantic Navigation",
-    "World Models",
-    "Robot Learning and Control",
-    "3D Vision and SLAM",
+    "I am an M.S. student in Robotics at Johns Hopkins University. My recent work sits across robot control, embodied navigation, and multimodal decision-making.",
+    "I started from motion control and locomotion, then moved into VLN and world-model-related embodied navigation. Going forward, I want to keep pushing toward the boundary between world action models and vision-language action systems, while continuing to learn in that direction.",
+    "I have hands-on experience in WBC, VLN, and world-model-oriented embodied systems, and I am currently looking for remote research internship opportunities.",
   ],
   projects: [
     {
-      name: "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
-      eyebrow: "IROS 2026 under review | First author",
+      name: "Undergraduate Research",
+      subtitle: "Perception, detection, and early robotics research",
       description:
-        "Designed a metacognitive planning framework for zero-shot multi-goal object navigation under partial observability, improving goal completion rate by 33% and reducing wasted steps by 22% on HM3D and real robots.",
-      skills: ["ObjectNav", "Embodied AI", "Planning", "HM3D"],
+        "My undergraduate work focused on robotic perception and research prototyping, including CNN-based object detection, UAV-oriented visual navigation, and trajectory modeling in lab environments.",
+      image: "/assets/projects/undergrad-trajectory.png",
+      link: "/projects/undergraduate",
+      skills: ["Perception", "Object Detection", "Trajectory Modeling"],
     },
     {
-      name: "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
-      eyebrow: "ECCV 2026 under review | Third author",
+      name: "Whole-Body Control and Locomotion",
+      subtitle: "Humanoid control, sim-to-real transfer, and motion retargeting",
       description:
-        "Contributed to a VLN system that integrates world-model-based state prediction and visual-history reasoning to improve robustness, generalization, and interpretability in open-world navigation.",
-      skills: ["VLN", "World Models", "Multimodal Reasoning"],
+        "I worked on humanoid locomotion and control across AIR Tsinghua and Xiaomi, covering terrain generation, policy training, sim-to-real deployment, retargeting, and low-level tracking behaviors.",
+      image: "/assets/projects/control-terrain.png",
+      link: "/projects/control",
+      skills: ["WBC", "Locomotion", "Retargeting", "Sim-to-Real"],
     },
     {
-      name: "Trajectory Forecasting for Dynamic Environments",
-      eyebrow: "Johns Hopkins Terradynamics Lab",
+      name: "VLN and World Models",
+      subtitle: "Real-robot navigation, MORN, and dual-anchoring",
       description:
-        "Architected and optimized an LSTM-based forecasting network for trajectory anticipation, achieving a Spearman correlation of 0.87 and expanding effective training coverage with a Gaussian-mixture data generator.",
-      skills: ["Sequence Modeling", "Forecasting", "Robot Dynamics"],
-    },
-    {
-      name: "CNN-Based Robotic Object Detection",
-      eyebrow: "IEEE IPIC 2023 | First author",
-      description:
-        "Improved YOLOv5 with adaptive convolution and multi-scale training, then integrated the detector with VINS for real-time obstacle avoidance and UAV navigation.",
-      skills: ["Object Detection", "YOLOv5", "VINS", "Robotics"],
-    },
-  ],
-  publications: [
-    {
-      title:
-        "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
-      venue: "IROS 2026",
-      note: "Under review | First author",
-      summary:
-        "A metacognitive planning framework for long-horizon zero-shot multi-goal navigation under partial observability.",
-    },
-    {
-      title:
-        "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
-      venue: "ECCV 2026",
-      note: "Under review | Third author",
-      summary:
-        "A navigation method that improves robustness with stronger state anchoring and visual-history reasoning.",
-    },
-    {
-      title:
-        "Research on Object Detection of Robotic based on Convolutional Neural Network",
-      venue: "IEEE IPIC 2023",
-      note: "Published | First author",
-      summary:
-        "An object detection pipeline for robotic perception with CNN-based improvements and downstream navigation integration.",
+        "My recent focus is embodied navigation: VLN evaluation and deployment, VLM-based ObjectNav, metacognitive long-horizon planning, and world-model-informed navigation reasoning.",
+      image: "/assets/projects/morn-arch.png",
+      link: "/projects/vln-world-models",
+      skills: ["VLN", "ObjectNav", "World Models", "Embodied AI"],
     },
   ],
   experience: [
     {
       company: "JD.com, Explore Academy",
-      title: "Embodied AI Algorithm Intern",
+      title: "Embodied Navigation Algorithm Intern",
       dateRange: "Nov 2025 - Mar 2026",
       bullets: [
-        "Built a zero-shot multi-goal benchmark on HM3D and deployed an embodied navigation stack on robots.",
-        "Decoupled low-level locomotion from high-level decision-making in a VLFM-based system.",
-        "Implemented scheduling for goal switching, backtracking, and episode termination in long-horizon navigation.",
+        "Built and evaluated embodied navigation pipelines spanning VLN, ObjectNav, real-robot data collection, model finetuning, and deployment.",
+        "Developed a VLM-based zero-shot multi-goal ObjectNav framework and pushed it from simulation toward real-robot validation.",
+        "Worked on long-horizon navigation reasoning and world-model-oriented system design for future embodied tasks.",
       ],
     },
     {
@@ -98,9 +61,9 @@ export const siteConfig = {
       title: "Robotics Engineer Intern",
       dateRange: "Sep 2025 - Nov 2025",
       bullets: [
-        "Converted factory assembly videos into SMPL trajectories and retargeted human motions to humanoids with PHC.",
-        "Built simulation environments in Unitree RL Gym and trained tracking policies for dexterous assembly-style behavior.",
-        "Benchmarked sim-to-real pipelines and automated evaluation for whole-body tasks.",
+        "Worked on humanoid control and hardware-configuration optimization through motion retargeting, simulation, and low-level policy training.",
+        "Converted human assembly videos into SMPL trajectories and built reusable retargeting data for humanoid behaviors.",
+        "Benchmarked sim2sim and RL pipelines for dexterous and payload-related robot tasks.",
       ],
     },
     {
@@ -108,9 +71,9 @@ export const siteConfig = {
       title: "Embodied AI Research Intern",
       dateRange: "Jan 2025 - Aug 2025",
       bullets: [
-        "Built unstructured training environments with procedural terrain generation for H1 humanoids.",
-        "Designed a curriculum strategy that accelerated policy convergence.",
-        "Integrated 3D semantics, SLAM, and ROS2 into a multimodal control stack for mapping and obstacle avoidance.",
+        "Built terrain generation and curriculum-training pipelines for humanoid locomotion in complex environments.",
+        "Trained locomotion policies in simulation and deployed them onto Unitree H1 through ROS2.",
+        "Explored how RL-based locomotion stacks can extend toward SLAM and embodied navigation tasks.",
       ],
     },
     {
@@ -118,9 +81,9 @@ export const siteConfig = {
       title: "Research Assistant",
       dateRange: "Jun 2024 - Dec 2024",
       bullets: [
-        "Developed forecasting models for trajectory anticipation in dynamic environments.",
-        "Built synthetic data generation pipelines with Gaussian Mixture Models.",
-        "Derived non-holonomic constraints for physically grounded closed-loop control analysis.",
+        "Worked on dynamics forecasting and trajectory modeling for cockroach-inspired robots.",
+        "Built data generation and validation pipelines for motion prediction in dynamic environments.",
+        "This stage was where I developed my earlier research foundation in modeling and robotics experimentation.",
       ],
     },
   ],
@@ -130,18 +93,18 @@ export const siteConfig = {
       degree: "M.S. in Robotics",
       dateRange: "Expected Jun 2027",
       achievements: [
-        "Current graduate student focused on embodied AI, navigation, and robot learning.",
+        "Current focus: embodied AI, robot control, navigation, and multimodal robotics.",
       ],
     },
     {
       school: "Dalian University of Technology",
-      degree: "B.S. in Mechanical Engineering; Dual Degree in Automation",
+      degree: "B.S. in Mechanical Engineering",
       dateRange: "Jun 2025",
       achievements: [
+        "Minor in Automation.",
         "Joint Program with UC Irvine.",
         "National 3D Design Competition, Third Prize.",
         "DUT Sci-Tech Innovation Scholarship.",
-        "Patents in anti-blocking conveyor design and robotic-arm-related hardware work.",
       ],
     },
   ],

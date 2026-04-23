@@ -1,0 +1,42 @@
+---
+import "../../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Whole-Body Control and Locomotion - Xi Lin</title>
+  </head>
+  <body class="bg-white text-gray-900">
+    <main class="mx-auto max-w-5xl px-6 py-16 sm:px-10">
+      <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-900">Back to home</a>
+      <h1 class="mt-6 text-4xl font-bold tracking-tight">Whole-Body Control and Locomotion</h1>
+      <p class="mt-4 max-w-3xl text-lg leading-relaxed text-gray-600">
+        This line of work covers humanoid locomotion, whole-body control related system understanding, motion retargeting, and sim-to-real deployment. It started from locomotion policy training and expanded toward more complete robot behavior pipelines.
+      </p>
+
+      <div class="mt-10 grid gap-8 md:grid-cols-2">
+        <img src="/assets/projects/control-terrain.png" alt="Terrain generation and humanoid locomotion" class="rounded-2xl border border-gray-200 object-cover" />
+        <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
+          <source src="/assets/projects/air-h1-demo.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="mt-10 grid gap-8 md:grid-cols-2">
+        <section class="rounded-2xl border border-gray-200 bg-gray-50 p-6">
+          <h2 class="text-xl font-semibold">AIR Tsinghua</h2>
+          <p class="mt-3 text-base leading-relaxed text-gray-600">
+            Built terrain generation pipelines in Isaac Gym, trained humanoid locomotion policies, and deployed them to Unitree H1 through ROS2 for complex-environment locomotion.
+          </p>
+        </section>
+        <section class="rounded-2xl border border-gray-200 bg-gray-50 p-6">
+          <h2 class="text-xl font-semibold">Xiaomi Robotics</h2>
+          <p class="mt-3 text-base leading-relaxed text-gray-600">
+            Worked on motion retargeting, assembly-style humanoid behavior, and low-level tracking policy training, while benchmarking simulation pipelines for dexterous robot tasks.
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
