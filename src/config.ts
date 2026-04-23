@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: "Xi Lin",
-  nameNative: "\u6797\u66e6",
   title: "M.S. Robotics @ JHU",
   description:
     "Personal academic website of Xi Lin, focused on embodied AI, world models, vision-language action and navigation, and robot control.",
   accentColor: "#002FA7",
+  heroInterestsText: "Research Interests: WAM\u4e28VLA\u4e28WBC.",
   heroStatusText:
     "Currently seeking remote research internship opportunities \u{1F44B}",
   social: {
@@ -12,6 +12,7 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/xilin-jhu",
     github: "https://github.com/xilin03",
     cv: "/Xi-Lin-Resume.pdf",
+    cvCn: "/LinXi-CV-CN.pdf",
   },
   about: [
     "I am an M.S. student in Robotics at Johns Hopkins University. My recent work focuses on embodied AI systems that connect real-robot deployment, long-horizon reasoning, and control-aware decision making.",

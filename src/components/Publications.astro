@@ -17,52 +17,53 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
         <div class="lg:col-span-8 space-y-8">
           {siteConfig.publications.map((publication) => (
             <article class="overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm">
-              <div class="p-6 sm:p-8">
-                <p class="text-sm font-mono" style={{ color: siteConfig.accentColor }}>
-                  {publication.subtitle}
-                </p>
-                <h3 class="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
-                  {publication.name}
-                </h3>
-                <p class="mt-4 max-w-3xl text-base sm:text-lg leading-relaxed text-gray-600">
-                  {publication.description}
-                </p>
-                <div class="mt-5 flex flex-wrap gap-2">
-                  {publication.skills.map((skill) => (
-                    <span class="rounded-full border border-gray-300 bg-gray-50 px-3 py-1.5 text-xs sm:text-sm font-medium text-gray-700">
-                      {skill}
-                    </span>
-                  ))}
+              <div class="grid gap-0 md:grid-cols-[300px_minmax(0,1fr)]">
+                <div class="border-b border-gray-200 bg-gray-50 p-4 md:border-b-0 md:border-r">
+                  <div class="flex h-full items-center justify-center overflow-hidden rounded-2xl border border-gray-200 bg-white">
+                    <img
+                      src={publication.image}
+                      alt={publication.name}
+                      class="max-h-72 w-full object-contain"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <div class="border-y border-gray-200 bg-gray-50 p-4 sm:p-6">
-                <div class="overflow-hidden rounded-2xl border border-gray-200 bg-white">
-                  <img
-                    src={publication.image}
-                    alt={publication.name}
-                    class="mx-auto max-h-72 w-full object-contain"
-                  />
-                </div>
-              </div>
-
-              <div class="flex flex-wrap gap-3 p-6 sm:px-8 sm:pb-8 sm:pt-6">
-                <a
-                  href={publication.link}
-                  class="inline-flex items-center rounded-full bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-700"
-                >
-                  View details
-                </a>
-                {
-                  publication.pdf && (
+                <div class="p-6 sm:p-8">
+                  <p class="text-sm font-mono" style={{ color: siteConfig.accentColor }}>
+                    {publication.subtitle}
+                  </p>
+                  <h3 class="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
+                    {publication.name}
+                  </h3>
+                  <p class="mt-4 max-w-3xl text-base sm:text-lg leading-relaxed text-gray-600">
+                    {publication.description}
+                  </p>
+                  <div class="mt-5 flex flex-wrap gap-2">
+                    {publication.skills.map((skill) => (
+                      <span class="rounded-full border border-gray-300 bg-gray-50 px-3 py-1.5 text-xs sm:text-sm font-medium text-gray-700">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                  <div class="mt-6 flex flex-wrap gap-3">
                     <a
-                      href={publication.pdf}
-                      class="inline-flex items-center rounded-full border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-gray-900 hover:text-gray-900"
+                      href={publication.link}
+                      class="inline-flex items-center rounded-full bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-gray-700"
                     >
-                      Download PDF
+                      View details
                     </a>
-                  )
-                }
+                    {
+                      publication.pdf && (
+                        <a
+                          href={publication.pdf}
+                          class="inline-flex items-center rounded-full border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-gray-900 hover:text-gray-900"
+                        >
+                          Download PDF
+                        </a>
+                      )
+                    }
+                  </div>
+                </div>
               </div>
             </article>
           ))}
