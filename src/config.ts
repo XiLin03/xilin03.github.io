@@ -56,6 +56,32 @@ export const siteConfig = {
       skills: ["Object Detection", "YOLOv5", "VINS", "Robotics"],
     },
   ],
+  publications: [
+    {
+      title:
+        "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
+      venue: "IROS 2026",
+      note: "Under review | First author",
+      summary:
+        "A metacognitive planning framework for long-horizon zero-shot multi-goal navigation under partial observability.",
+    },
+    {
+      title:
+        "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
+      venue: "ECCV 2026",
+      note: "Under review | Third author",
+      summary:
+        "A navigation method that improves robustness with stronger state anchoring and visual-history reasoning.",
+    },
+    {
+      title:
+        "Research on Object Detection of Robotic based on Convolutional Neural Network",
+      venue: "IEEE IPIC 2023",
+      note: "Published | First author",
+      summary:
+        "An object detection pipeline for robotic perception with CNN-based improvements and downstream navigation integration.",
+    },
+  ],
   experience: [
     {
       company: "JD.com, Explore Academy",
@@ -115,6 +141,7 @@ export const siteConfig = {
         "Joint Program with UC Irvine.",
         "National 3D Design Competition, Third Prize.",
         "DUT Sci-Tech Innovation Scholarship.",
+        "Patents in anti-blocking conveyor design and robotic-arm-related hardware work.",
       ],
     },
   ],
