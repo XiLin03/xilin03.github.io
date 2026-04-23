@@ -1,12 +1,12 @@
 export const siteConfig = {
   name: "Xi Lin",
-  title: "M.S. Student in Robotics at Johns Hopkins University",
+  title: "Robotics M.S. Student at Johns Hopkins University",
   description:
     "Personal academic website of Xi Lin, focused on embodied AI, vision-language navigation, and robot learning.",
   accentColor: "#2563eb",
   heroLabel: "Embodied AI | Robot Learning | Vision-Language Navigation",
   heroDescription:
-    "I work on embodied AI systems that combine perception, planning, and control for robust long-horizon behavior. I am especially interested in remote research opportunities in navigation, world models, multimodal reasoning, and real-world robot deployment.",
+    "I study embodied AI systems that combine perception, planning, and control for robust long-horizon behavior. I am actively seeking remote research opportunities in navigation, world models, multimodal reasoning, and deployable robot learning.",
   social: {
     email: "xilin03@outlook.com",
     linkedin: "https://linkedin.com/in/xilin-jhu",
@@ -16,7 +16,7 @@ export const siteConfig = {
   about: [
     "I am currently an M.S. student in Robotics at Johns Hopkins University. My recent work spans vision-language navigation, object-goal navigation, humanoid control, and multimodal robot systems.",
     "Across internships at JD.com, Xiaomi Robotics, and AIR Tsinghua, I have worked on zero-shot navigation, world-model-integrated VLN, simulation-to-real robot learning, and motion retargeting pipelines.",
-    "I am building toward research that connects embodied foundation models with efficient decision-making and deployable robot behavior.",
+    "I am particularly interested in research that makes embodied foundation models more reliable, efficient, and useful in real-world robotic settings.",
   ],
   researchInterests: [
     "Embodied AI",
