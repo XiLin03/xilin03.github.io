@@ -1,0 +1,39 @@
+---
+import "../../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dual-Anchoring - Xi Lin</title>
+  </head>
+  <body class="bg-white text-gray-900">
+    <main class="mx-auto max-w-6xl px-6 py-16 sm:px-10">
+      <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-900">Back to home</a>
+      <p class="mt-6 text-sm font-mono text-blue-600">ECCV 2026 | Under Review | Third Author</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">Dual-Anchoring: Addressing State Drift in Vision-Language Navigation</h1>
+      <p class="mt-5 max-w-4xl text-lg leading-relaxed text-gray-600">
+        Dual-Anchoring addresses long-horizon state drift in VLN. The framework decomposes the failure into progress drift and memory drift, then explicitly anchors instruction progress and history representations to keep the agent aligned with the true task state.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/papers/Dual-Anchoring.pdf" class="inline-flex items-center rounded-full bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-gray-700">Download PDF</a>
+      </div>
+
+      <div class="mt-10 overflow-hidden rounded-[28px] border border-gray-200 bg-white">
+        <img src="/assets/projects/dual-anchor-arch.png" alt="Dual-Anchoring architecture" class="w-full object-contain" />
+      </div>
+
+      <section class="mt-10 rounded-[28px] border border-gray-200 bg-gray-50 p-6 sm:p-8">
+        <h2 class="text-2xl font-semibold">Abstract Summary</h2>
+        <p class="mt-4 text-base leading-relaxed text-gray-600">
+          Recent Video-LLM-based VLN systems remain vulnerable to state drift on long trajectories. Dual-Anchoring tackles this through Instruction Progress Anchoring, which explicitly distinguishes completed from remaining sub-goals, and Memory Landmark Anchoring, which uses a landmark-centric world model to preserve distinct representations of visited locations.
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600">
+          This page currently keeps the released framing, architecture, and preprint link. More implementation-specific notes can be added later when the public material is ready.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

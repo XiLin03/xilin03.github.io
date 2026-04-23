@@ -1,0 +1,44 @@
+---
+import "../../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JHU Dynamics - Xi Lin</title>
+  </head>
+  <body class="bg-white text-gray-900">
+    <main class="mx-auto max-w-6xl px-6 py-16 sm:px-10">
+      <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-900">Back to home</a>
+      <p class="mt-6 text-sm font-mono text-blue-600">JHU Terradynamics Lab | Robotics Research Intern</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">Research on Cockroach-Inspired Robot Motion and Obstacle Avoidance</h1>
+      <p class="mt-5 max-w-4xl text-lg leading-relaxed text-gray-600">
+        This project focused on dynamics forecasting and trajectory modeling for cockroach-inspired robots. I fused IMU and force data for posture prediction, analyzed nonlinear motion constraints, and built a C++ and MATLAB simulation-validation pipeline around LSTM-based dynamics modeling.
+      </p>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-2">
+        <img src="/assets/projects/jhu-trajectory-model.png" alt="JHU trajectory model" class="w-full rounded-[28px] border border-gray-200 object-cover bg-gray-50" />
+        <section class="rounded-[28px] border border-gray-200 bg-gray-50 p-6">
+          <h2 class="text-xl font-semibold">Program Core</h2>
+          <ul class="mt-4 space-y-3 text-base leading-relaxed text-gray-600">
+            <li>LSTM dynamics modeling: fused IMU and force data to predict robot posture, with correlation above 0.87 in internal validation.</li>
+            <li>Nonlinear constraint modeling: derived motion constraints from posture, angular velocity, and displacement errors.</li>
+            <li>Data and simulation pipeline: expanded trajectory data and built a C++ and MATLAB training-validation workflow.</li>
+          </ul>
+          <div class="mt-5 flex flex-wrap gap-2">
+            {["PyTorch", "MATLAB", "C++", "LSTM", "GMM", "Simulation"].map((item) => (
+              <span class="rounded-full border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-700">
+                {item}
+              </span>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      <div class="mt-8 overflow-hidden rounded-[28px] border border-gray-200 bg-white">
+        <img src="/assets/projects/jhu-dynamics-table.png" alt="JHU validation summary" class="w-full object-contain" />
+      </div>
+    </main>
+  </body>
+</html>

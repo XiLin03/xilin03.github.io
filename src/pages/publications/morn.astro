@@ -1,0 +1,57 @@
+---
+import "../../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>MORN - Xi Lin</title>
+  </head>
+  <body class="bg-white text-gray-900">
+    <main class="mx-auto max-w-6xl px-6 py-16 sm:px-10">
+      <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-900">Back to home</a>
+      <p class="mt-6 text-sm font-mono text-blue-600">IROS 2026 | Under Review | First Author</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation</h1>
+      <p class="mt-5 max-w-4xl text-lg leading-relaxed text-gray-600">
+        MORN adds a metacognitive executive layer to frozen VLM-based navigation backbones for long-horizon multi-goal navigation. The core idea is to regulate persistence, switching, and evidence accumulation under strict resource constraints so that the agent avoids wasting most of its budget on infeasible goals.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="/papers/MORN.pdf" class="inline-flex items-center rounded-full bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-gray-700">Download PDF</a>
+      </div>
+
+      <div class="mt-10 overflow-hidden rounded-[28px] border border-gray-200 bg-white">
+        <img src="/assets/projects/morn-arch.png" alt="MORN architecture" class="w-full object-contain" />
+      </div>
+
+      <section class="mt-10 rounded-[28px] border border-gray-200 bg-gray-50 p-6 sm:p-8">
+        <h2 class="text-2xl font-semibold">Abstract Summary</h2>
+        <p class="mt-4 text-base leading-relaxed text-gray-600">
+          MORN is motivated by the observation that standard zero-shot ObjectNav systems behave as purely reactive agents and often fall into a sunk-cost trap in long multi-goal missions. The framework introduces a System-2-style meta-controller that monitors progress velocity, perceptual uncertainty, and temporal stability, enabling the agent to abort zombie goals early and preserve budget for solvable targets.
+        </p>
+      </section>
+
+      <section class="mt-10 grid gap-6 lg:grid-cols-2">
+        <article class="rounded-[28px] border border-gray-200 bg-white p-4">
+          <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
+            <source src="/assets/projects/morn-sim-demo.mp4" type="video/mp4" />
+          </video>
+          <h2 class="mt-4 text-xl font-semibold">Simulation Demo</h2>
+          <p class="mt-3 text-base leading-relaxed text-gray-600">
+            Simulation results show how MORN regulates multi-goal scheduling under constrained resources and reduces wasted-step behavior compared with reactive baselines.
+          </p>
+        </article>
+        <article class="rounded-[28px] border border-gray-200 bg-white p-4">
+          <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
+            <source src="/assets/projects/morn-real-demo.mp4" type="video/mp4" />
+          </video>
+          <h2 class="mt-4 text-xl font-semibold">Real-Robot Demo</h2>
+          <p class="mt-3 text-base leading-relaxed text-gray-600">
+            The real-robot demo highlights how the executive layer remains useful beyond simulation by improving long-horizon target scheduling and execution behavior.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

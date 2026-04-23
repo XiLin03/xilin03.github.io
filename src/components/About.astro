@@ -18,6 +18,13 @@ import { siteConfig } from "../config";
             {paragraph}
           </p>
         ))}
+        <div class="pt-2 flex flex-wrap gap-2.5">
+          {siteConfig.aboutTags.map((tag) => (
+            <span class="rounded-full border border-gray-300 bg-gray-50 px-3 py-1.5 text-xs sm:text-sm font-medium text-gray-700">
+              {tag}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   </div>

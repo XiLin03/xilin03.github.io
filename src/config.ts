@@ -2,10 +2,11 @@ export const siteConfig = {
   name: "Xi Lin",
   title: "M.S. Robotics @ JHU",
   description:
-    "Personal academic website of Xi Lin, focused on robotics, embodied AI, world models, vision-language navigation, and control.",
+    "Personal academic website of Xi Lin, focused on embodied AI, world models, vision-language action and navigation, and robot control.",
   accentColor: "#2563eb",
   heroInterestsText:
-    "Research interests include world models, vision-language navigation, and robot control.",
+    "Research Interests: world models\u4e28vision-language action/nav\u4e28robot control.",
+  heroStatusText: "Currently seeking remote research internship opportunities :)",
   social: {
     email: "xilin03@outlook.com",
     linkedin: "https://linkedin.com/in/xilin-jhu",
@@ -13,26 +14,66 @@ export const siteConfig = {
     cv: "/Xi-Lin-Resume.pdf",
   },
   about: [
-    "I am an M.S. student in Robotics at Johns Hopkins University. My work sits across robot control, embodied navigation, and multimodal robotics systems.",
-    "I started from motion control and locomotion, then moved into vision-language navigation and world-model-related embodied systems. Going forward, I want to continue learning at the boundary between world action models and vision-language action systems.",
-    "I have experience in WBC, VLN, and world-model-oriented robotics pipelines, and I am currently looking for remote research internship opportunities.",
+    "I am an M.S. student in Robotics at Johns Hopkins University. My recent work focuses on embodied AI systems that connect real-robot deployment, long-horizon reasoning, and control-aware decision making.",
+    "During my graduate path, I started from whole-body control and locomotion, then moved into vision-language navigation and world-model-oriented embodied systems. I am now especially interested in the boundary between world/action models and vision-language action systems, and I am actively seeking remote research internship opportunities.",
+  ],
+  aboutTags: [
+    "World Models",
+    "Vision-Language Action",
+    "VLN / ObjectNav",
+    "Real-Robot Deployment",
+    "Whole-Body Control",
+    "Retargeting",
+    "RL / Sim2Real",
+    "Dynamics Modeling",
+  ],
+  publications: [
+    {
+      name: "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
+      subtitle: "IROS 2026 | Under Review | First Author",
+      description:
+        "A resource-rational long-horizon navigation framework that adds a metacognitive executive layer on top of frozen navigation backbones, explicitly regulating multi-goal missions under time and budget constraints.",
+      image: "/assets/projects/morn-arch.png",
+      link: "/publications/morn",
+      pdf: "/papers/MORN.pdf",
+      skills: ["World Models", "ObjectNav", "Long-Horizon Planning"],
+    },
+    {
+      name: "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
+      subtitle: "ECCV 2026 | Under Review | Third Author",
+      description:
+        "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
+      image: "/assets/projects/dual-anchor-arch.png",
+      link: "/publications/dual-anchoring",
+      pdf: "/papers/Dual-Anchoring.pdf",
+      skills: ["VLN", "Video-LLMs", "Landmark-Centric World Models"],
+    },
+    {
+      name: "Research on Object Detection of Robotic Based on Convolutional Neural Network",
+      subtitle: "IEEE IPIC 2023 | First Author",
+      description:
+        "An earlier undergraduate publication on robotic object detection, combining CNN-based recognition with practical UAV-oriented navigation integration and deployment experiments.",
+      image: "/assets/projects/undergrad-trajectory.png",
+      link: "/publications/cnn-detection",
+      skills: ["CNN", "YOLOv5", "VINS-Fusion"],
+    },
   ],
   projects: [
     {
-      name: "Embodied Navigation Systems for Real-World Instruction Following",
+      name: "Embodied Navigation for Real-World Instruction Following",
       subtitle: "JD.com | Embodied Navigation Algorithm Intern",
       description:
-        "Built and evaluated embodied navigation systems spanning real-robot VLN, VLM-based ObjectNav, long-horizon planning, data collection, model finetuning, and deployment for open-world robotic settings.",
+        "Built real-robot VLN and zero-shot ObjectNav pipelines covering evaluation, data collection, finetuning, and outdoor deployment.",
       image: "/assets/projects/jd-robot-demo.png",
       link: "/projects/jd-navigation",
-      skills: ["VLN", "ObjectNav", "World Models", "Real-Robot Deployment"],
+      skills: ["World Models", "VLN", "ObjectNav", "Real-Robot"],
     },
     {
-      name: "Humanoid Motion Retargeting and Low-Level Skill Simulation",
+      name: "Humanoid Motion Retargeting and Skill Simulation",
       subtitle: "Xiaomi Robotics | Robotics Engineer Intern",
       description:
-        "Worked on humanoid motion retargeting, simulation-system construction, and low-level tracking behavior training for assembly-style and payload-related robotic tasks.",
-      image: "/assets/projects/xiaomi-retargeting.png",
+        "Worked on retargeting, simulation-system construction, and low-level behavior training for assembly-style humanoid tasks.",
+      image: "/assets/projects/xiaomi-overview.png",
       link: "/projects/xiaomi-humanoid",
       skills: ["Retargeting", "WBC", "RL", "Sim2Sim"],
     },
@@ -40,19 +81,19 @@ export const siteConfig = {
       name: "Humanoid Locomotion in Complex Terrain",
       subtitle: "AIR Tsinghua | Embodied AI Research Intern",
       description:
-        "Built terrain-generation and curriculum-training pipelines for humanoid locomotion, then transferred learned policies from simulation to Unitree H1 through ROS2 deployment.",
+        "Built terrain generation, curriculum training, and ROS2 deployment pipelines for humanoid locomotion and sim-to-real transfer.",
       image: "/assets/projects/control-terrain.png",
       link: "/projects/air-locomotion",
-      skills: ["Locomotion", "PPO", "ROS2", "Sim-to-Real"],
+      skills: ["Robot Control", "RL", "ROS2", "Sim-to-Real"],
     },
     {
-      name: "CNN-Based Robotic Object Detection",
-      subtitle: "Dalian University of Technology | Undergraduate Research",
+      name: "Dynamics Modeling for Cockroach-Inspired Robots",
+      subtitle: "JHU Terradynamics Lab | Research Assistant",
       description:
-        "Improved a CNN-based robotic perception pipeline and connected object detection with visual navigation components for robotics and UAV-oriented applications.",
-      image: "/assets/projects/cnn-detection.png",
-      link: "/projects/cnn-detection",
-      skills: ["Perception", "Object Detection", "YOLOv5", "VINS-Fusion"],
+        "Modeled robot dynamics and obstacle-avoidance trajectories with LSTM-based forecasting and simulation-validation pipelines.",
+      image: "/assets/projects/jhu-trajectory-model.png",
+      link: "/projects/jhu-dynamics",
+      skills: ["Dynamics Modeling", "LSTM", "C++ / MATLAB", "Trajectory Analysis"],
     },
   ],
   experience: [
@@ -61,9 +102,9 @@ export const siteConfig = {
       title: "Embodied Navigation Algorithm Intern",
       dateRange: "Nov 2025 - Mar 2026",
       bullets: [
-        "Built and evaluated embodied navigation pipelines spanning VLN, ObjectNav, real-robot data collection, model finetuning, and deployment.",
-        "Developed a VLM-based zero-shot multi-goal ObjectNav framework and pushed it from simulation toward real-robot validation.",
-        "Worked on long-horizon navigation reasoning and world-model-oriented system design for future embodied tasks.",
+        "Systematically evaluated real-world VLN solutions and built a full pipeline for data collection, model finetuning, and outdoor deployment.",
+        "Developed a VLM-based zero-shot ObjectNav direction for indoor settings and explored transferable deployment from VLM or VLFM systems to real robots.",
+        "This internship led to follow-up work on MORN and Dual-Anchoring for long-horizon navigation and world-model-aware decision making.",
       ],
     },
     {
@@ -71,9 +112,9 @@ export const siteConfig = {
       title: "Robotics Engineer Intern",
       dateRange: "Sep 2025 - Nov 2025",
       bullets: [
-        "Worked on humanoid control and hardware-configuration optimization through motion retargeting, simulation, and low-level policy training.",
-        "Converted human assembly videos into SMPL trajectories and built reusable retargeting data for humanoid behaviors.",
-        "Benchmarked sim2sim and RL pipelines for dexterous and payload-related robot tasks.",
+        "Converted factory assembly videos into SMPL trajectories and retargeted human motions to humanoids for reusable downstream training data.",
+        "Built simulation environments and trained low-level tracking behaviors for dexterous assembly and payload-related robot tasks.",
+        "Benchmarked sim2sim and RL pipelines in a unified physics stack to support later real-world iteration.",
       ],
     },
     {
@@ -81,9 +122,9 @@ export const siteConfig = {
       title: "Embodied AI Research Intern",
       dateRange: "Jan 2025 - Aug 2025",
       bullets: [
-        "Built terrain generation and curriculum-training pipelines for humanoid locomotion in complex environments.",
-        "Trained locomotion policies in simulation and deployed them onto Unitree H1 through ROS2.",
-        "Explored how RL-based locomotion stacks can extend toward SLAM and embodied navigation tasks.",
+        "Built parameterized terrain generation and curriculum-based RL training for humanoid locomotion in complex environments.",
+        "Completed sim-to-real transfer from Isaac Gym to Unitree H1 through ROS2 deployment.",
+        "Used this stage as a foundation for later work in navigation, SLAM-aware robotics systems, and embodied AI.",
       ],
     },
     {
@@ -91,9 +132,9 @@ export const siteConfig = {
       title: "Research Assistant",
       dateRange: "Jun 2024 - Dec 2024",
       bullets: [
-        "Worked on dynamics forecasting and trajectory modeling for cockroach-inspired robots.",
-        "Built data generation and validation pipelines for motion prediction in dynamic environments.",
-        "This stage was where I developed my earlier research foundation in modeling and robotics experimentation.",
+        "Built LSTM-based motion prediction pipelines using fused IMU and force data for cockroach-inspired robot dynamics.",
+        "Developed C++ and MATLAB simulation-validation tooling for trajectory modeling and nonlinear constraint analysis.",
+        "This earlier stage formed my foundation in data-centric robotics experimentation and modeling.",
       ],
     },
   ],
@@ -103,7 +144,7 @@ export const siteConfig = {
       degree: "M.S. in Robotics",
       dateRange: "Expected Jun 2027",
       achievements: [
-        "Current focus: embodied AI, robot control, navigation, and multimodal robotics.",
+        "Current focus: embodied AI, long-horizon navigation, robot control, and multimodal robotics systems.",
       ],
     },
     {

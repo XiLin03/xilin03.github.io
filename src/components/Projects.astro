@@ -20,14 +20,14 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
               {siteConfig.projects.map((project) => (
                 <a
                   href={project.link}
-                  class="group overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                  class="group overflow-hidden rounded-[28px] border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
-                  <div class="grid md:grid-cols-[360px_minmax(0,1fr)]">
-                    <div class="relative aspect-[4/3] overflow-hidden bg-gray-100">
+                  <div class="grid gap-0 md:grid-cols-[300px_minmax(0,1fr)]">
+                    <div class="relative aspect-[5/4] overflow-hidden bg-gray-50 p-4">
                       <img
                         src={project.image}
                         alt={project.name}
-                        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                        class="h-full w-full object-contain object-center transition-transform duration-300 group-hover:scale-[1.02]"
                       />
                     </div>
                     <div class="p-6 sm:p-7 md:p-8">
@@ -37,12 +37,12 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                       <h3 class="mt-3 text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">
                         {project.name}
                       </h3>
-                      <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                      <p class="mt-4 max-w-2xl text-base sm:text-lg leading-relaxed text-gray-600">
                         {project.description}
                       </p>
                       <div class="mt-5 flex flex-wrap gap-2">
                         {project.skills.map((skill) => (
-                          <span class="rounded-full bg-gray-900 px-3 py-1.5 text-xs sm:text-sm font-medium text-white">
+                          <span class="rounded-full border border-gray-300 bg-gray-50 px-3 py-1.5 text-xs sm:text-sm font-medium text-gray-700">
                             {skill}
                           </span>
                         ))}
