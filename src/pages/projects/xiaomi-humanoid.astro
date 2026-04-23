@@ -17,59 +17,42 @@ import "../../styles/global.css";
         This experience focused on humanoid robot hardware configuration optimization and simulation systems. I converted factory assembly videos into SMPL trajectories, retargeted complex human motions to humanoids with PHC, and built simulation and low-level policy training loops for assembly-style and payload-related tasks.
       </p>
 
-      <div class="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <div class="overflow-hidden rounded-[28px] border border-gray-200 bg-black">
-          <video controls playsinline class="w-full">
-            <source src="/assets/projects/xiaomi-retargeting-demo.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <section class="rounded-[28px] border border-gray-200 bg-gray-50 p-6">
-          <h2 class="text-xl font-semibold">Program Core</h2>
-          <ul class="mt-4 space-y-3 text-base leading-relaxed text-gray-600">
-            <li>Converted factory assembly videos into SMPL trajectories and retargeted complex human motions to humanoids with PHC, creating a reusable motion dataset for downstream training.</li>
-            <li>Built high-fidelity simulation environments in Unitree RL Gym and trained low-level tracking policies for dexterous assembly-style robot behaviors.</li>
-            <li>Benchmarked ASAP and related pipelines in a unified physics stack for tasks such as payload walking, while building automated evaluation tooling for sim-to-real iteration.</li>
-          </ul>
-          <div class="mt-5 flex flex-wrap gap-2">
-            {["WBC", "Retargeting", "RL", "sim2sim", "SMPL", "Unitree RL Gym"].map((item) => (
-              <span class="rounded-full border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-700">
-                {item}
-              </span>
-            ))}
-          </div>
-        </section>
-      </div>
-
-      <section class="mt-10 rounded-[28px] border border-gray-200 bg-white p-6 sm:p-8">
-        <h2 class="text-2xl font-semibold">Detailed Demo Frames</h2>
-        <div class="mt-6 grid gap-6 md:grid-cols-2">
-          <article class="rounded-3xl border border-gray-200 bg-gray-50 p-4">
-            <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
-              <source src="/assets/projects/xiaomi-tightening-demo.mp4" type="video/mp4" />
-            </video>
-            <img src="/assets/projects/xiaomi-tightening-frame.png" alt="Tightening operation frame" class="mt-4 rounded-2xl border border-gray-200" />
-            <p class="mt-3 text-sm leading-relaxed text-gray-600">Demo: tightening operations with torque below 20 Nm, used to validate low-level tracking and task-conditioned behavior quality.</p>
-          </article>
-          <article class="rounded-3xl border border-gray-200 bg-gray-50 p-4">
-            <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
-              <source src="/assets/projects/xiaomi-finetune-demo.mp4" type="video/mp4" />
-            </video>
-            <img src="/assets/projects/xiaomi-guide-config.png" alt="Guide config design" class="mt-4 rounded-2xl border border-gray-200" />
-            <p class="mt-3 text-sm leading-relaxed text-gray-600">Guide-config design and RL finetuning were used to stabilize behavior quality and adapt the motion policies to task-specific constraints.</p>
-          </article>
-          <article class="rounded-3xl border border-gray-200 bg-gray-50 p-4">
-            <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
-              <source src="/assets/projects/xiaomi-sim2sim-demo.mp4" type="video/mp4" />
-            </video>
-            <img src="/assets/projects/xiaomi-sim2sim-frame.png" alt="Sim2sim validation frame" class="mt-4 rounded-2xl border border-gray-200" />
-            <p class="mt-3 text-sm leading-relaxed text-gray-600">Sim2sim evaluation was used to benchmark behavior transfer quality and support iterative comparison across different control stacks.</p>
-          </article>
-          <article class="rounded-3xl border border-gray-200 bg-gray-50 p-4">
-            <img src="/assets/projects/xiaomi-overview.png" alt="Xiaomi retargeting overview" class="rounded-2xl border border-gray-200" />
-            <p class="mt-4 text-sm leading-relaxed text-gray-600">This stage gave me direct experience with retargeting, whole-body control, reinforcement learning, and simulation-heavy engineering for practical humanoid behaviors.</p>
-          </article>
+      <section class="mt-10 rounded-[28px] border border-gray-200 bg-gray-50 p-6 sm:p-8">
+        <h2 class="text-2xl font-semibold">Program Core</h2>
+        <ul class="mt-4 space-y-3 text-base leading-relaxed text-gray-600">
+          <li>Converted factory assembly videos into SMPL trajectories and retargeted complex human motions to humanoids with PHC, creating a reusable motion dataset for downstream training.</li>
+          <li>Built simulation systems and low-level behavior training loops for assembly-style robot tasks, then used Mujoco-side demos to validate the learned motion quality.</li>
+          <li>This stage gave me direct engineering experience with retargeting, whole-body control, and practical policy iteration for humanoid skill pipelines.</li>
+        </ul>
+        <div class="mt-5 flex flex-wrap gap-2">
+          {["Retargeting", "SMPL", "Mujoco", "WBC", "RL"].map((item) => (
+            <span class="rounded-full border border-gray-300 bg-white px-3 py-1.5 text-sm font-medium text-gray-700">
+              {item}
+            </span>
+          ))}
         </div>
       </section>
+
+      <div class="mt-10 grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
+        <article class="overflow-hidden rounded-[28px] border border-gray-200 bg-white p-4">
+          <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
+            <source src="/assets/projects/xiaomi-finetune-demo.mp4" type="video/mp4" />
+          </video>
+          <p class="mt-4 text-sm leading-relaxed text-gray-600">
+            Mujoco-side behavior demo used for low-level skill validation after retargeting and policy refinement.
+          </p>
+        </article>
+        <article class="grid gap-6">
+          <div class="overflow-hidden rounded-[28px] border border-gray-200 bg-white p-4">
+            <video controls autoplay muted loop playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
+              <source src="/assets/projects/xiaomi-retargeting-demo.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="overflow-hidden rounded-[28px] border border-gray-200 bg-white p-4">
+            <img src="/assets/projects/xiaomi-overview.png" alt="Retargeting workflow overview" class="w-full rounded-2xl border border-gray-200 object-contain" />
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

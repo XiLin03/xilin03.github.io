@@ -1,12 +1,12 @@
 export const siteConfig = {
   name: "Xi Lin",
+  nameNative: "\u6797\u66e6",
   title: "M.S. Robotics @ JHU",
   description:
     "Personal academic website of Xi Lin, focused on embodied AI, world models, vision-language action and navigation, and robot control.",
-  accentColor: "#2563eb",
-  heroInterestsText:
-    "Research Interests: world models\u4e28vision-language action/nav\u4e28robot control.",
-  heroStatusText: "Currently seeking remote research internship opportunities :)",
+  accentColor: "#002FA7",
+  heroStatusText:
+    "Currently seeking remote research internship opportunities \u{1F44B}",
   social: {
     email: "xilin03@outlook.com",
     linkedin: "https://linkedin.com/in/xilin-jhu",
@@ -52,8 +52,8 @@ export const siteConfig = {
       name: "Research on Object Detection of Robotic Based on Convolutional Neural Network",
       subtitle: "IEEE IPIC 2023 | First Author",
       description:
-        "An earlier undergraduate publication on robotic object detection, combining CNN-based recognition with practical UAV-oriented navigation integration and deployment experiments.",
-      image: "/assets/projects/undergrad-trajectory.png",
+        "An earlier competition-oriented project that combined YOLOv5 perception with VINS-Fusion for UAV-style visual navigation and target-aware motion.",
+      image: "/assets/projects/cnn-accuracy-plot.png",
       link: "/publications/cnn-detection",
       skills: ["CNN", "YOLOv5", "VINS-Fusion"],
     },
@@ -73,7 +73,7 @@ export const siteConfig = {
       subtitle: "Xiaomi Robotics | Robotics Engineer Intern",
       description:
         "Worked on retargeting, simulation-system construction, and low-level behavior training for assembly-style humanoid tasks.",
-      image: "/assets/projects/xiaomi-overview.png",
+      image: "/assets/projects/xiaomi-cover.png",
       link: "/projects/xiaomi-humanoid",
       skills: ["Retargeting", "WBC", "RL", "Sim2Sim"],
     },
