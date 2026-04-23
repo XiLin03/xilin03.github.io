@@ -6,9 +6,9 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
 {
   hasPublications && (
     <section id="publications" class="p-8 sm:p-12 md:p-16 lg:p-24">
-      <div class="grid grid-cols-1 lg:grid-cols-[320px_minmax(0,1fr)] xl:grid-cols-[380px_minmax(0,1fr)] gap-8 lg:gap-12 items-start">
-        <div>
-          <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+      <div class="grid grid-cols-1 lg:grid-cols-[280px_minmax(0,1fr)] xl:grid-cols-[320px_minmax(0,1fr)] gap-8 lg:gap-16 items-start">
+        <div class="relative z-10 lg:pr-6">
+          <h2 class="w-max text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
             Publications
           </h2>
           <div class="w-[75px] h-[5px] mt-2 rounded-full" style={`background-color: ${siteConfig.accentColor}`}></div>
