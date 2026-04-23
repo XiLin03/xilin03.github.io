@@ -33,25 +33,29 @@ import "../../styles/global.css";
         </div>
       </section>
 
-      <div class="mt-10 grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
+      <div class="mt-10 grid gap-6 lg:grid-cols-[0.94fr_1.06fr]">
         <article class="overflow-hidden rounded-[28px] border border-gray-200 bg-white p-4">
           <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
-            <source src="/assets/projects/xiaomi-finetune-demo.mp4" type="video/mp4" />
+            <source src="/assets/projects/xiaomi-sim2sim-demo.mp4" type="video/mp4" />
           </video>
           <p class="mt-4 text-sm leading-relaxed text-gray-600">
-            Mujoco-side behavior demo used for low-level skill validation after retargeting and policy refinement.
+            Mujoco validation demo. Final low-level behavior after retargeting and policy refinement.
           </p>
         </article>
         <article class="grid gap-6">
           <div class="overflow-hidden rounded-[28px] border border-gray-200 bg-white p-4">
-            <video controls autoplay muted loop playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
-              <source src="/assets/projects/xiaomi-retargeting-demo.mp4" type="video/mp4" />
-            </video>
+            <img src="/assets/projects/xiaomi-retargeting.png" alt="Retargeting result" class="w-full rounded-2xl border border-gray-200 object-contain" />
+            <p class="mt-4 text-sm leading-relaxed text-gray-600">
+              Retargeting result. Human motion is converted into humanoid-compatible body trajectories.
+            </p>
           </div>
           <div class="overflow-hidden rounded-[28px] border border-gray-200 bg-white p-4">
             <img src="/assets/projects/xiaomi-overview.png" alt="Retargeting workflow overview" class="w-full rounded-2xl border border-gray-200 object-contain" />
+            <p class="mt-4 text-sm leading-relaxed text-gray-600">
+              Workflow overview. Original data, SMPL motion, and robot retargeting are aligned as one pipeline.
+            </p>
           </div>
-        </div>
+        </article>
       </div>
     </main>
   </body>
