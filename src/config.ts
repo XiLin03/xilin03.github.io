@@ -33,6 +33,8 @@ export const siteConfig = {
   publications: [
     {
       name: "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
+      authors:
+        "Xi Lin1,3,*, Jiayi Li3,*, Kangyi Wu2,3, Jiaqiao Tang3, Qingrong He3, and Lin Zhao3,†",
       subtitle: "IROS 2026 | Under Review | First Author",
       description:
         "A resource-rational long-horizon navigation framework that adds a metacognitive executive layer on top of frozen navigation backbones, explicitly regulating multi-goal missions under time and budget constraints.",
@@ -43,6 +45,8 @@ export const siteConfig = {
     },
     {
       name: "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
+      authors:
+        "Kangyi Wu1†, Pengna Li1†, Kailin Lyu2, Xi Lin3, Lin Zhao4‡, Qingrong He4, Jinjun Wang1, and Jianyi Liu1*",
       subtitle: "ECCV 2026 | Under Review | Third Author",
       description:
         "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
@@ -53,6 +57,7 @@ export const siteConfig = {
     },
     {
       name: "Research on Object Detection of Robotic Based on Convolutional Neural Network",
+      authors: "Xi Lin, Yuge Chen, Donglai Liu",
       subtitle: "IEEE IPIC 2023 | First Author",
       description:
         "An earlier competition-oriented project that combined YOLOv5 perception with VINS-Fusion for UAV-style visual navigation and target-aware motion.",
@@ -102,6 +107,7 @@ export const siteConfig = {
   experience: [
     {
       company: "JD.com, Explore Academy",
+      logo: "JD",
       title: "Embodied Navigation Algorithm Intern",
       dateRange: "Nov 2025 - Mar 2026",
       bullets: [
@@ -112,6 +118,7 @@ export const siteConfig = {
     },
     {
       company: "Xiaomi Robotics",
+      logo: "mi",
       title: "Robotics Engineer Intern",
       dateRange: "Sep 2025 - Nov 2025",
       bullets: [
@@ -122,6 +129,7 @@ export const siteConfig = {
     },
     {
       company: "Institute for AI Industry Research, Tsinghua University",
+      logo: "AIR",
       title: "Embodied AI Research Intern",
       dateRange: "Jan 2025 - Aug 2025",
       bullets: [
@@ -132,6 +140,7 @@ export const siteConfig = {
     },
     {
       company: "Johns Hopkins University Terradynamics Lab",
+      logo: "JHU",
       title: "Research Assistant",
       dateRange: "Jun 2024 - Dec 2024",
       bullets: [
@@ -144,6 +153,7 @@ export const siteConfig = {
   education: [
     {
       school: "Johns Hopkins University",
+      logo: "JHU",
       degree: "M.S. in Robotics",
       dateRange: "Expected Jun 2027",
       achievements: [
@@ -152,6 +162,7 @@ export const siteConfig = {
     },
     {
       school: "Dalian University of Technology",
+      logo: "DUT",
       degree: "B.S. in Mechanical Engineering",
       dateRange: "Jun 2025",
       achievements: [

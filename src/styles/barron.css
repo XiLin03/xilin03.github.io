@@ -131,6 +131,43 @@ p {
   border: 0;
 }
 
+.mini-entry {
+  width: 100%;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 10px;
+}
+
+.mini-logo-cell {
+  width: 58px;
+  padding: 0 14px 0 0;
+  vertical-align: top;
+}
+
+.mini-logo {
+  width: 42px;
+  height: 42px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.mini-content {
+  padding: 0;
+  vertical-align: top;
+}
+
+.mini-content p {
+  margin-top: 0;
+}
+
 @media (max-width: 640px) {
   .thumb-cell,
   .entry-cell {

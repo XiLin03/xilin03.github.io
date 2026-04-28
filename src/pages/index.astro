@@ -29,12 +29,8 @@ import "../styles/barron.css";
                 </p>
                 <p class="link-line">
                   <a href={`mailto:${siteConfig.social.email}`}>Email</a> &nbsp;/&nbsp;
-                  <a href={`mailto:${siteConfig.social.emailSecondary}`}>Outlook</a> &nbsp;/&nbsp;
                   <a href={siteConfig.social.cv}>CV</a> &nbsp;/&nbsp;
-                  <a href={siteConfig.social.cvCn}>CV (CN)</a> &nbsp;/&nbsp;
-                  <a href={siteConfig.social.github}>Github</a> &nbsp;/&nbsp;
-                  <a href={siteConfig.social.linkedin}>LinkedIn</a> &nbsp;/&nbsp;
-                  <a href={siteConfig.social.careerSite}>Portfolio</a>
+                  <a href={siteConfig.social.careerSite}>Portfolio / work site</a>
                 </p>
               </td>
             </tr>
@@ -64,7 +60,7 @@ import "../styles/barron.css";
                     <span class="papertitle">{publication.name}</span>
                   </a>
                   <br />
-                  <strong>Xi Lin</strong>
+                  <span set:html={publication.authors}></span>
                   <br />
                   <em>{publication.subtitle}</em>
                   <br />
@@ -111,11 +107,20 @@ import "../styles/barron.css";
               <td class="section-cell">
                 <h2>Experience</h2>
                 {siteConfig.experience.map((exp) => (
-                  <p>
-                    <strong>{exp.title}</strong>, {exp.company}. <em>{exp.dateRange}</em>
-                    <br />
-                    {exp.bullets[0]}
-                  </p>
+                  <table class="mini-entry"><tbody>
+                    <tr>
+                      <td class="mini-logo-cell">
+                        <div class="mini-logo">{exp.logo}</div>
+                      </td>
+                      <td class="mini-content">
+                        <p>
+                          <strong>{exp.title}</strong>, {exp.company}. <em>{exp.dateRange}</em>
+                          <br />
+                          {exp.bullets[0]}
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody></table>
                 ))}
               </td>
             </tr>
@@ -126,11 +131,20 @@ import "../styles/barron.css";
               <td class="section-cell">
                 <h2>Education</h2>
                 {siteConfig.education.map((edu) => (
-                  <p>
-                    <strong>{edu.school}</strong>, {edu.degree}. <em>{edu.dateRange}</em>
-                    <br />
-                    {edu.achievements.join(" ")}
-                  </p>
+                  <table class="mini-entry"><tbody>
+                    <tr>
+                      <td class="mini-logo-cell">
+                        <div class="mini-logo">{edu.logo}</div>
+                      </td>
+                      <td class="mini-content">
+                        <p>
+                          <strong>{edu.school}</strong>, {edu.degree}. <em>{edu.dateRange}</em>
+                          <br />
+                          {edu.achievements.join(" ")}
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody></table>
                 ))}
               </td>
             </tr>
