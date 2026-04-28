@@ -67,7 +67,7 @@ import "../styles/barron.css";
                   <br />
                   <span set:html={publication.authors}></span>
                   <br />
-                  <em>{publication.subtitle}</em>
+                  <em><strong>{publication.venue}</strong>{publication.status && ` | ${publication.status}`}</em>
                   <br />
                   <a href={publication.link}>project page</a>
                   {publication.pdf && <span> / <a href={publication.pdf}>pdf</a></span>}
@@ -120,11 +120,13 @@ import "../styles/barron.css";
                         </div>
                       </td>
                       <td class="mini-content">
-                        <p>
-                          <strong>{exp.title}</strong>, {exp.company}. <em>{exp.dateRange}</em>
-                          <br />
-                          {exp.bullets[0]}
+                        <p class="mini-title">
+                          <strong>{exp.title}</strong>, <strong>{exp.company}</strong>
                         </p>
+                        <p class="mini-date"><em>{exp.dateRange}</em></p>
+                        <ul class="mini-bullets">
+                          {exp.bullets.slice(0, 2).map((bullet) => <li>{bullet}</li>)}
+                        </ul>
                       </td>
                     </tr>
                   </tbody></table>
@@ -146,11 +148,13 @@ import "../styles/barron.css";
                         </div>
                       </td>
                       <td class="mini-content">
-                        <p>
-                          <strong>{edu.school}</strong>, {edu.degree}. <em>{edu.dateRange}</em>
-                          <br />
-                          {edu.achievements.join(" ")}
+                        <p class="mini-title">
+                          <strong>{edu.school}</strong>, {edu.degree}
                         </p>
+                        <p class="mini-date"><em>{edu.dateRange}</em></p>
+                        <ul class="mini-bullets">
+                          {edu.achievements.map((achievement) => <li>{achievement}</li>)}
+                        </ul>
                       </td>
                     </tr>
                   </tbody></table>

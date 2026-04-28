@@ -35,6 +35,8 @@ export const siteConfig = {
       name: "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
       authors:
         "<strong>Xi Lin</strong>, Jiayi Li, Kangyi Wu, Jiaqiao Tang, Qingrong He, and Lin Zhao",
+      venue: "IROS 2026",
+      status: "Under Review | First Author",
       subtitle: "IROS 2026 | Under Review | First Author",
       description:
         "A resource-rational long-horizon navigation framework that adds a metacognitive executive layer on top of frozen navigation backbones, explicitly regulating multi-goal missions under time and budget constraints.",
@@ -47,6 +49,8 @@ export const siteConfig = {
       name: "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
       authors:
         "Kangyi Wu, Pengna Li, Kailin Lyu, <strong>Xi Lin</strong>, Lin Zhao, Qingrong He, Jinjun Wang, and Jianyi Liu",
+      venue: "ECCV 2026",
+      status: "Under Review | Third Author",
       subtitle: "ECCV 2026 | Under Review | Third Author",
       description:
         "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
@@ -58,6 +62,8 @@ export const siteConfig = {
     {
       name: "Research on Object Detection of Robotic Based on Convolutional Neural Network",
       authors: "<strong>Xi Lin</strong>, Yuge Chen, Donglai Liu",
+      venue: "IEEE IPIC 2023",
+      status: "First Author",
       subtitle: "IEEE IPIC 2023 | First Author",
       description:
         "An earlier competition-oriented project that combined YOLOv5 perception with VINS-Fusion for UAV-style visual navigation and target-aware motion.",
