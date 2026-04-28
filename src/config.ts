@@ -34,7 +34,7 @@ export const siteConfig = {
     {
       name: "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
       authors:
-        "Xi Lin1,3,*, Jiayi Li3,*, Kangyi Wu2,3, Jiaqiao Tang3, Qingrong He3, and Lin Zhao3,†",
+        "<strong>Xi Lin</strong>, Jiayi Li, Kangyi Wu, Jiaqiao Tang, Qingrong He, and Lin Zhao",
       subtitle: "IROS 2026 | Under Review | First Author",
       description:
         "A resource-rational long-horizon navigation framework that adds a metacognitive executive layer on top of frozen navigation backbones, explicitly regulating multi-goal missions under time and budget constraints.",
@@ -46,7 +46,7 @@ export const siteConfig = {
     {
       name: "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
       authors:
-        "Kangyi Wu1†, Pengna Li1†, Kailin Lyu2, Xi Lin3, Lin Zhao4‡, Qingrong He4, Jinjun Wang1, and Jianyi Liu1*",
+        "Kangyi Wu, Pengna Li, Kailin Lyu, <strong>Xi Lin</strong>, Lin Zhao, Qingrong He, Jinjun Wang, and Jianyi Liu",
       subtitle: "ECCV 2026 | Under Review | Third Author",
       description:
         "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
@@ -57,7 +57,7 @@ export const siteConfig = {
     },
     {
       name: "Research on Object Detection of Robotic Based on Convolutional Neural Network",
-      authors: "Xi Lin, Yuge Chen, Donglai Liu",
+      authors: "<strong>Xi Lin</strong>, Yuge Chen, Donglai Liu",
       subtitle: "IEEE IPIC 2023 | First Author",
       description:
         "An earlier competition-oriented project that combined YOLOv5 perception with VINS-Fusion for UAV-style visual navigation and target-aware motion.",
@@ -108,6 +108,7 @@ export const siteConfig = {
     {
       company: "JD.com, Explore Academy",
       logo: "JD",
+      logoImage: "/assets/logos/jd.jpg",
       title: "Embodied Navigation Algorithm Intern",
       dateRange: "Nov 2025 - Mar 2026",
       bullets: [
@@ -119,6 +120,7 @@ export const siteConfig = {
     {
       company: "Xiaomi Robotics",
       logo: "mi",
+      logoImage: "/assets/logos/xiaomi.png",
       title: "Robotics Engineer Intern",
       dateRange: "Sep 2025 - Nov 2025",
       bullets: [
@@ -130,6 +132,7 @@ export const siteConfig = {
     {
       company: "Institute for AI Industry Research, Tsinghua University",
       logo: "AIR",
+      logoImage: "/assets/logos/air.png",
       title: "Embodied AI Research Intern",
       dateRange: "Jan 2025 - Aug 2025",
       bullets: [
@@ -141,6 +144,7 @@ export const siteConfig = {
     {
       company: "Johns Hopkins University Terradynamics Lab",
       logo: "JHU",
+      logoImage: "/assets/logos/jhu.ico",
       title: "Research Assistant",
       dateRange: "Jun 2024 - Dec 2024",
       bullets: [
@@ -154,6 +158,7 @@ export const siteConfig = {
     {
       school: "Johns Hopkins University",
       logo: "JHU",
+      logoImage: "/assets/logos/jhu.ico",
       degree: "M.S. in Robotics",
       dateRange: "Expected Jun 2027",
       achievements: [
@@ -163,6 +168,7 @@ export const siteConfig = {
     {
       school: "Dalian University of Technology",
       logo: "DUT",
+      logoImage: "/assets/logos/dut.svg",
       degree: "B.S. in Mechanical Engineering",
       dateRange: "Jun 2025",
       achievements: [
