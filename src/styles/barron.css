@@ -37,7 +37,7 @@ tr,
 p,
 a {
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 body {
@@ -47,19 +47,19 @@ body {
 
 strong {
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
 h2 {
   margin: 0;
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 23px;
   font-weight: normal;
 }
 
 p {
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .compact-list {
@@ -69,12 +69,12 @@ p {
 
 .compact-list li {
   margin: 3px 0;
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .page-table {
   width: 100%;
-  max-width: 800px;
+  max-width: 740px;
   border: 0;
   border-collapse: separate;
   border-spacing: 0;
@@ -84,7 +84,7 @@ p {
 
 .entry-table {
   width: 100%;
-  max-width: 800px;
+  max-width: 740px;
   border: 0;
   border-collapse: separate;
   border-spacing: 0 10px;
@@ -108,7 +108,7 @@ p {
   padding-top: 20px;
   margin: 0;
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 34px;
   text-align: center;
 }
 
@@ -118,7 +118,7 @@ p {
 
 .papertitle {
   font-family: "Lato", Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 
