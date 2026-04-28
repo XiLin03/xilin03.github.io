@@ -1,6 +1,8 @@
 ---
 import { siteConfig } from "../config";
 import "../styles/barron.css";
+
+const showCareerSections = false;
 ---
 
 <!DOCTYPE HTML>
@@ -22,10 +24,13 @@ import "../styles/barron.css";
               <td class="intro-cell">
                 <p class="name">{siteConfig.name}</p>
                 <p>
-                  I am an <strong>M.S. student in Robotics</strong> at <a href="https://www.jhu.edu/">Johns Hopkins University</a>, currently seeking <strong>remote research internship opportunities</strong> in embodied AI and robotics.
+                  I am an <strong>M.S. student in Robotics</strong> at <a href="https://www.jhu.edu/">Johns Hopkins University</a>.
                 </p>
                 <p>
                   Previously, I worked on robot dynamics and terradynamics at JHU in collaboration with Prof. <a href="https://me.jhu.edu/faculty/chen-li/">Chen Li</a>, completed my undergraduate thesis at <a href="https://www.dlut.edu.cn/">Dalian University of Technology</a> under the supervision of Prof. <a href="https://faculty.dlut.edu.cn/2005011026/en/index.htm">Yan Zhuang</a>, and collaborated with Dr. Lin Zhao during my embodied navigation internship at <strong>JD.com</strong>.
+                </p>
+                <p class="status-line">
+                  I am currently <strong>looking for research intern opportunities</strong>, especially remote research collaborations in embodied AI and robotics.
                 </p>
                 <p class="link-line">
                   <a href={`mailto:${siteConfig.social.email}`}>Email</a> &nbsp;/&nbsp;
@@ -107,61 +112,65 @@ import "../styles/barron.css";
             ))}
           </tbody></table>
 
-          <table class="page-table"><tbody>
-            <tr>
-              <td class="section-cell">
-                <h2>Experience</h2>
-                {siteConfig.experience.map((exp) => (
-                  <table class="mini-entry"><tbody>
-                    <tr>
-                      <td class="mini-logo-cell">
-                        <div class="mini-logo">
-                          <img src={exp.logoImage} alt={`${exp.company} logo`} />
-                        </div>
-                      </td>
-                      <td class="mini-content">
-                        <p class="mini-title">
-                          <strong>{exp.title}</strong>, <strong>{exp.company}</strong>
-                        </p>
-                        <p class="mini-date"><em>{exp.dateRange}</em></p>
-                        <ul class="mini-bullets">
-                          {exp.bullets.slice(0, 2).map((bullet) => <li>{bullet}</li>)}
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody></table>
-                ))}
-              </td>
-            </tr>
-          </tbody></table>
+          {showCareerSections && (
+            <table class="page-table"><tbody>
+              <tr>
+                <td class="section-cell">
+                  <h2>Experience</h2>
+                  {siteConfig.experience.map((exp) => (
+                    <table class="mini-entry"><tbody>
+                      <tr>
+                        <td class="mini-logo-cell">
+                          <div class="mini-logo">
+                            <img src={exp.logoImage} alt={`${exp.company} logo`} />
+                          </div>
+                        </td>
+                        <td class="mini-content">
+                          <p class="mini-title">
+                            <strong>{exp.title}</strong>, <strong>{exp.company}</strong>
+                          </p>
+                          <p class="mini-date"><em>{exp.dateRange}</em></p>
+                          <ul class="mini-bullets">
+                            {exp.bullets.slice(0, 2).map((bullet) => <li>{bullet}</li>)}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody></table>
+                  ))}
+                </td>
+              </tr>
+            </tbody></table>
+          )}
 
-          <table class="page-table"><tbody>
-            <tr>
-              <td class="section-cell">
-                <h2>Education</h2>
-                {siteConfig.education.map((edu) => (
-                  <table class="mini-entry"><tbody>
-                    <tr>
-                      <td class="mini-logo-cell">
-                        <div class="mini-logo">
-                          <img src={edu.logoImage} alt={`${edu.school} logo`} />
-                        </div>
-                      </td>
-                      <td class="mini-content">
-                        <p class="mini-title">
-                          <strong>{edu.school}</strong>, {edu.degree}
-                        </p>
-                        <p class="mini-date"><em>{edu.dateRange}</em></p>
-                        <ul class="mini-bullets">
-                          {edu.achievements.map((achievement) => <li>{achievement}</li>)}
-                        </ul>
-                      </td>
-                    </tr>
-                  </tbody></table>
-                ))}
-              </td>
-            </tr>
-          </tbody></table>
+          {showCareerSections && (
+            <table class="page-table"><tbody>
+              <tr>
+                <td class="section-cell">
+                  <h2>Education</h2>
+                  {siteConfig.education.map((edu) => (
+                    <table class="mini-entry"><tbody>
+                      <tr>
+                        <td class="mini-logo-cell">
+                          <div class="mini-logo">
+                            <img src={edu.logoImage} alt={`${edu.school} logo`} />
+                          </div>
+                        </td>
+                        <td class="mini-content">
+                          <p class="mini-title">
+                            <strong>{edu.school}</strong>, {edu.degree}
+                          </p>
+                          <p class="mini-date"><em>{edu.dateRange}</em></p>
+                          <ul class="mini-bullets">
+                            {edu.achievements.map((achievement) => <li>{achievement}</li>)}
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody></table>
+                  ))}
+                </td>
+              </tr>
+            </tbody></table>
+          )}
         </td>
       </tr>
     </tbody></table>
