@@ -1,8 +1,9 @@
 ---
 import { siteConfig } from "../config";
-import "../styles/global.css";
+import "../styles/barron.css";
 ---
 
+<!DOCTYPE HTML>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,160 +13,130 @@ import "../styles/global.css";
     <meta name="description" content={siteConfig.description} />
     <title>{siteConfig.name} - {siteConfig.title}</title>
   </head>
-  <body class="bg-white text-slate-900">
-    <main class="mx-auto max-w-5xl px-5 py-8 sm:px-6 md:py-12">
-      <header class="mb-12 border-b border-slate-200 pb-8">
-        <div class="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h1 class="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
-              {siteConfig.name}
-            </h1>
-            <p class="mt-2 text-lg text-slate-700">{siteConfig.title}</p>
-            <p class="mt-3 max-w-3xl text-base leading-7 text-slate-700">
-              Research Interests: WAM | VLA | VLN | WBC. Currently seeking remote research internship opportunities.
-            </p>
-          </div>
-          <nav class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-blue-700">
-            <a class="hover:underline" href="#about">About</a>
-            <a class="hover:underline" href="#publications">Publications</a>
-            <a class="hover:underline" href="#projects">Projects</a>
-            <a class="hover:underline" href="#experience">Experience</a>
-            <a class="hover:underline" href="#education">Education</a>
-          </nav>
-        </div>
+  <body>
+    <table class="page-table"><tbody>
+      <tr>
+        <td>
+          <table class="page-table"><tbody>
+            <tr>
+              <td class="intro-cell">
+                <p class="name">{siteConfig.name}</p>
+                <p>
+                  I am an M.S. student in Robotics at Johns Hopkins University. My recent work focuses on embodied AI systems that connect real-robot deployment, long-horizon reasoning, and control-aware decision making.
+                </p>
+                <p>
+                  I started from whole-body control and locomotion, then moved into vision-language navigation and world-model-oriented embodied systems. I am currently interested in WAM, VLA, VLN, and WBC, and I am seeking remote research internship opportunities.
+                </p>
+                <p class="link-line">
+                  <a href={`mailto:${siteConfig.social.email}`}>Email</a> &nbsp;/&nbsp;
+                  <a href={`mailto:${siteConfig.social.emailSecondary}`}>Outlook</a> &nbsp;/&nbsp;
+                  <a href={siteConfig.social.cv}>CV</a> &nbsp;/&nbsp;
+                  <a href={siteConfig.social.cvCn}>CV (CN)</a> &nbsp;/&nbsp;
+                  <a href={siteConfig.social.github}>Github</a> &nbsp;/&nbsp;
+                  <a href={siteConfig.social.linkedin}>LinkedIn</a> &nbsp;/&nbsp;
+                  <a href={siteConfig.social.careerSite}>Portfolio</a>
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
 
-        <div class="mt-5 flex flex-wrap gap-x-4 gap-y-2 text-sm">
-          <a class="text-blue-700 hover:underline" href={`mailto:${siteConfig.social.email}`}>
-            {siteConfig.social.email}
-          </a>
-          <a class="text-blue-700 hover:underline" href={`mailto:${siteConfig.social.emailSecondary}`}>
-            {siteConfig.social.emailSecondary}
-          </a>
-          <a class="text-blue-700 hover:underline" href={siteConfig.social.github} target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          <a class="text-blue-700 hover:underline" href={siteConfig.social.linkedin} target="_blank" rel="noopener noreferrer">
-            LinkedIn
-          </a>
-          <a class="text-blue-700 hover:underline" href={siteConfig.social.cv}>CV</a>
-          <a class="text-blue-700 hover:underline" href={siteConfig.social.cvCn}>CV (CN)</a>
-          <a class="text-blue-700 hover:underline" href={siteConfig.social.careerSite} target="_blank" rel="noopener noreferrer">
-            Portfolio / work site
-          </a>
-        </div>
-      </header>
+          <table class="page-table"><tbody>
+            <tr>
+              <td class="section-cell">
+                <h2>Research</h2>
+                <p>
+                  My research interests include world/action models, vision-language action and navigation, and robot control. I am especially interested in embodied systems that can reason over long horizons while remaining deployable on real robots.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
 
-      <section id="about" class="section-block">
-        <h2 class="section-title">About</h2>
-        <div class="space-y-4 text-[15px] leading-7 text-slate-700">
-          {siteConfig.about.map((paragraph) => <p>{paragraph}</p>)}
-        </div>
-        <div class="mt-4 flex flex-wrap gap-2">
-          {siteConfig.aboutTags.map((tag) => (
-            <span class="rounded border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs text-slate-700">
-              {tag}
-            </span>
-          ))}
-        </div>
-      </section>
+          <table class="entry-table"><tbody>
+            {siteConfig.publications.map((publication) => (
+              <tr>
+                <td class="thumb-cell">
+                  <a href={publication.link}>
+                    <img class="thumb-image" src={publication.image} alt={publication.name} />
+                  </a>
+                </td>
+                <td class="entry-cell">
+                  <a href={publication.link}>
+                    <span class="papertitle">{publication.name}</span>
+                  </a>
+                  <br />
+                  <strong>Xi Lin</strong>
+                  <br />
+                  <em>{publication.subtitle}</em>
+                  <br />
+                  <a href={publication.link}>project page</a>
+                  {publication.pdf && <span> / <a href={publication.pdf}>pdf</a></span>}
+                  <p>{publication.description}</p>
+                </td>
+              </tr>
+            ))}
+          </tbody></table>
 
-      <section id="publications" class="section-block">
-        <h2 class="section-title">Publications</h2>
-        <div class="space-y-8">
-          {siteConfig.publications.map((publication) => (
-            <article class="grid gap-4 sm:grid-cols-[180px_minmax(0,1fr)]">
-              <a href={publication.link} class="block overflow-hidden rounded border border-slate-200 bg-slate-50 p-2">
-                <img src={publication.image} alt={publication.name} class="aspect-[16/10] h-auto w-full object-contain" />
-              </a>
-              <div>
-                <p class="text-xs font-medium text-blue-700">{publication.subtitle}</p>
-                <h3 class="mt-1 text-lg font-semibold leading-snug text-slate-950">
-                  <a href={publication.link} class="hover:text-blue-700">{publication.name}</a>
-                </h3>
-                <p class="mt-2 text-[15px] leading-7 text-slate-700">{publication.description}</p>
-                <div class="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-sm">
-                  <a class="text-blue-700 hover:underline" href={publication.link}>View details</a>
-                  {publication.pdf && <a class="text-blue-700 hover:underline" href={publication.pdf}>Download PDF</a>}
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+          <table class="page-table"><tbody>
+            <tr>
+              <td class="section-cell">
+                <h2>Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
 
-      <section id="projects" class="section-block">
-        <h2 class="section-title">Projects</h2>
-        <div class="space-y-6">
-          {siteConfig.projects.map((project) => (
-            <article class="grid gap-4 sm:grid-cols-[180px_minmax(0,1fr)]">
-              <a href={project.link} class="block overflow-hidden rounded border border-slate-200 bg-slate-50 p-2">
-                <img src={project.image} alt={project.name} class="aspect-[16/10] h-auto w-full object-contain" />
-              </a>
-              <div>
-                <p class="text-xs font-medium text-blue-700">{project.subtitle}</p>
-                <h3 class="mt-1 text-lg font-semibold leading-snug text-slate-950">
-                  <a href={project.link} class="hover:text-blue-700">{project.name}</a>
-                </h3>
-                <p class="mt-2 text-[15px] leading-7 text-slate-700">{project.description}</p>
-                <a class="mt-2 inline-block text-sm text-blue-700 hover:underline" href={project.link}>View project</a>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+          <table class="entry-table"><tbody>
+            {siteConfig.projects.map((project) => (
+              <tr>
+                <td class="thumb-cell">
+                  <a href={project.link}>
+                    <img class="thumb-image" src={project.image} alt={project.name} />
+                  </a>
+                </td>
+                <td class="entry-cell">
+                  <a href={project.link}>
+                    <span class="papertitle">{project.name}</span>
+                  </a>
+                  <br />
+                  <em>{project.subtitle}</em>
+                  <br />
+                  <a href={project.link}>project page</a>
+                  <p>{project.description}</p>
+                </td>
+              </tr>
+            ))}
+          </tbody></table>
 
-      <section id="experience" class="section-block">
-        <h2 class="section-title">Experience</h2>
-        <div class="space-y-5">
-          {siteConfig.experience.map((exp) => (
-            <article>
-              <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                <h3 class="font-semibold text-slate-950">{exp.title}, {exp.company}</h3>
-                <p class="text-sm text-slate-500">{exp.dateRange}</p>
-              </div>
-              <ul class="mt-2 list-disc space-y-1 pl-5 text-[15px] leading-7 text-slate-700">
-                {exp.bullets.map((bullet) => <li>{bullet}</li>)}
-              </ul>
-            </article>
-          ))}
-        </div>
-      </section>
+          <table class="page-table"><tbody>
+            <tr>
+              <td class="section-cell">
+                <h2>Experience</h2>
+                {siteConfig.experience.map((exp) => (
+                  <p>
+                    <strong>{exp.title}</strong>, {exp.company}. <em>{exp.dateRange}</em>
+                    <br />
+                    {exp.bullets[0]}
+                  </p>
+                ))}
+              </td>
+            </tr>
+          </tbody></table>
 
-      <section id="education" class="section-block">
-        <h2 class="section-title">Education</h2>
-        <div class="space-y-5">
-          {siteConfig.education.map((edu) => (
-            <article>
-              <div class="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                <h3 class="font-semibold text-slate-950">{edu.degree}, {edu.school}</h3>
-                <p class="text-sm text-slate-500">{edu.dateRange}</p>
-              </div>
-              <ul class="mt-2 list-disc space-y-1 pl-5 text-[15px] leading-7 text-slate-700">
-                {edu.achievements.map((achievement) => <li>{achievement}</li>)}
-              </ul>
-            </article>
-          ))}
-        </div>
-      </section>
-    </main>
+          <table class="page-table"><tbody>
+            <tr>
+              <td class="section-cell">
+                <h2>Education</h2>
+                {siteConfig.education.map((edu) => (
+                  <p>
+                    <strong>{edu.school}</strong>, {edu.degree}. <em>{edu.dateRange}</em>
+                    <br />
+                    {edu.achievements.join(" ")}
+                  </p>
+                ))}
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table>
   </body>
 </html>
-
-<style>
-  :global(html) {
-    scroll-behavior: smooth;
-  }
-
-  .section-block {
-    margin-top: 2.75rem;
-  }
-
-  .section-title {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid rgb(226 232 240);
-    padding-bottom: 0.35rem;
-    font-size: 1.35rem;
-    font-weight: 650;
-    color: rgb(2 6 23);
-  }
-</style>

@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Lato Italic"), local("Lato-Italic"), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), local("Lato-Bold"), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format("woff2");
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+strong {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.45;
+}
+
+.page-table {
+  width: 100%;
+  max-width: 800px;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.entry-table {
+  width: 100%;
+  max-width: 800px;
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.intro-cell {
+  padding: 2.5%;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.section-cell {
+  padding: 16px;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.link-line {
+  text-align: center;
+}
+
+.papertitle {
+  font-family: "Lato", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.thumb-cell {
+  padding: 16px;
+  width: 20%;
+  vertical-align: middle;
+}
+
+.entry-cell {
+  padding: 8px;
+  width: 80%;
+  vertical-align: middle;
+}
+
+.thumb-image {
+  width: 160px;
+  max-width: 160px;
+  height: 110px;
+  object-fit: contain;
+  border: 0;
+}
+
+@media (max-width: 640px) {
+  .thumb-cell,
+  .entry-cell {
+    display: block;
+    width: auto;
+    padding: 10px 16px;
+  }
+
+  .thumb-image {
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+  }
+}
