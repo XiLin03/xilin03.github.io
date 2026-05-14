@@ -3,6 +3,7 @@ import { siteConfig } from "../config";
 import "../styles/barron.css";
 
 const showCareerSections = false;
+const showProjects = false;
 ---
 
 <!DOCTYPE HTML>
@@ -82,35 +83,39 @@ const showCareerSections = false;
             ))}
           </tbody></table>
 
-          <table class="page-table"><tbody>
-            <tr>
-              <td class="section-cell">
-                <h2>Projects</h2>
-              </td>
-            </tr>
-          </tbody></table>
+          {showProjects && (
+            <>
+              <table class="page-table"><tbody>
+                <tr>
+                  <td class="section-cell">
+                    <h2>Projects</h2>
+                  </td>
+                </tr>
+              </tbody></table>
 
-          <table class="entry-table"><tbody>
-            {siteConfig.projects.map((project) => (
-              <tr>
-                <td class="thumb-cell">
-                  <a href={project.link}>
-                    <img class="thumb-image" src={project.image} alt={project.name} />
-                  </a>
-                </td>
-                <td class="entry-cell">
-                  <a href={project.link}>
-                    <span class="papertitle">{project.name}</span>
-                  </a>
-                  <br />
-                  <em>{project.subtitle}</em>
-                  <br />
-                  <a href={project.link}>project page</a>
-                  <p>{project.description}</p>
-                </td>
-              </tr>
-            ))}
-          </tbody></table>
+              <table class="entry-table"><tbody>
+                {siteConfig.projects.map((project) => (
+                  <tr>
+                    <td class="thumb-cell">
+                      <a href={project.link}>
+                        <img class="thumb-image" src={project.image} alt={project.name} />
+                      </a>
+                    </td>
+                    <td class="entry-cell">
+                      <a href={project.link}>
+                        <span class="papertitle">{project.name}</span>
+                      </a>
+                      <br />
+                      <em>{project.subtitle}</em>
+                      <br />
+                      <a href={project.link}>project page</a>
+                      <p>{project.description}</p>
+                    </td>
+                  </tr>
+                ))}
+              </tbody></table>
+            </>
+          )}
 
           {showCareerSections && (
             <table class="page-table"><tbody>
