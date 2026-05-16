@@ -68,7 +68,7 @@ export const siteConfig = {
       description:
         "An earlier competition-oriented project that combined YOLOv5 perception with VINS-Fusion for UAV-style visual navigation and target-aware motion.",
       image: "/assets/projects/cnn-accuracy-plot.png",
-      link: "/publications/cnn-detection",
+      link: null,
       skills: ["CNN", "YOLOv5", "VINS-Fusion"],
     },
   ],
