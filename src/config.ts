@@ -12,6 +12,7 @@ export const siteConfig = {
     emailSecondary: "xilin03@outlook.com",
     linkedin: "https://linkedin.com/in/xilin-jhu",
     github: "https://github.com/xilin03",
+    scholar: "https://scholar.google.com/citations?user=JSBomI4AAAAJ&hl=zh-CN",
     careerSite: "/Shaun/",
     cv: "/Xi-Lin-Resume.pdf",
     cvCn: "/LinXi-CV-CN.pdf",
