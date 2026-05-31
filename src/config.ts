@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Xi Lin",
-  title: "M.S. Robotics @ JHU",
+  title: "JHU",
   description:
     "Personal academic website of Xi Lin, focused on embodied AI, world models, vision-language action and navigation, and robot control.",
   accentColor: "#002FA7",
@@ -76,7 +76,7 @@ export const siteConfig = {
   projects: [
     {
       name: "Embodied Navigation for Real-World Instruction Following",
-      subtitle: "JD.com | Embodied Navigation Algorithm Intern",
+      subtitle: "JD Explore Academy | Embodied Navigation Algorithm Intern",
       description:
         "Built real-robot VLN and zero-shot ObjectNav pipelines covering evaluation, data collection, finetuning, and outdoor deployment.",
       image: "/assets/projects/jd-robot-demo.png",
@@ -113,7 +113,7 @@ export const siteConfig = {
   ],
   experience: [
     {
-      company: "JD.com, Explore Academy",
+      company: "JD Explore Academy",
       logo: "JD",
       logoImage: "/assets/logos/jd.jpg",
       title: "Embodied Navigation Algorithm Intern",
