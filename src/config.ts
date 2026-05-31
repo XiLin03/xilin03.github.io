@@ -49,10 +49,10 @@ export const siteConfig = {
     {
       name: "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
       authors:
-        "Kangyi Wu, Pengna Li, Kailin Lyu, <strong>Xi Lin</strong>, Lin Zhao, Qingrong He, Jinjun Wang, and Jianyi Liu",
+        "Kangyi Wu, <strong>Xi Lin</strong>, Pengna Li, Kailin Lyu, Lin Zhao, Qingrong He, Jinjun Wang, and Jianyi Liu",
       venue: "ECCV 2026",
-      status: "Under Review | Third Author",
-      subtitle: "ECCV 2026 | Under Review | Third Author",
+      status: "Under Review | Second Author",
+      subtitle: "ECCV 2026 | Under Review | Second Author",
       description:
         "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
       image: "/assets/projects/dual-anchor-arch.png",
