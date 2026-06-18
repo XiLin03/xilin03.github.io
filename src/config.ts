@@ -36,9 +36,9 @@ export const siteConfig = {
       name: "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
       authors:
         "<strong>Xi Lin</strong>, Jiayi Li, Kangyi Wu, Jiaqiao Tang, Qingrong He, and Lin Zhao",
-      venue: "IROS 2026",
+      venue: "RA-L",
       status: "Under Review | First Author",
-      subtitle: "IROS 2026 | Under Review | First Author",
+      subtitle: "RA-L | Under Review | First Author",
       description:
         "A resource-rational long-horizon navigation framework that adds a metacognitive executive layer on top of frozen navigation backbones, explicitly regulating multi-goal missions under time and budget constraints.",
       image: "/assets/projects/morn-arch.png",
@@ -51,8 +51,8 @@ export const siteConfig = {
       authors:
         "Kangyi Wu, <strong>Xi Lin</strong>, Pengna Li, Kailin Lyu, Lin Zhao, Qingrong He, Jinjun Wang, and Jianyi Liu",
       venue: "ECCV 2026",
-      status: "Under Review | Second Author",
-      subtitle: "ECCV 2026 | Under Review | Second Author",
+      status: "Accepted | Second Author",
+      subtitle: "ECCV 2026 | Accepted | Second Author",
       description:
         "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
       image: "/assets/projects/dual-anchor-arch.png",
