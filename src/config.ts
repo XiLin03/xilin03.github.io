@@ -51,8 +51,8 @@ export const siteConfig = {
       authors:
         "Kangyi Wu, <strong>Xi Lin</strong>, Pengna Li, Kailin Lyu, Lin Zhao, Qingrong He, Jinjun Wang, and Jianyi Liu",
       venue: "ECCV 2026",
-      status: "Accepted | Second Author",
-      subtitle: "ECCV 2026 | Accepted | Second Author",
+      status: "Second Author",
+      subtitle: "ECCV 2026 | Second Author",
       description:
         "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
       image: "/assets/projects/dual-anchor-arch.png",
