@@ -1,0 +1,60 @@
+---
+import "../../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>BAT-Nav - Xi Lin</title>
+  </head>
+  <body class="bg-white text-gray-900">
+    <main class="mx-auto max-w-6xl px-6 py-16 sm:px-10">
+      <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-900">Back to home</a>
+      <p class="mt-6 text-sm font-mono text-blue-600">RAL 2026 | Under Review | First Author</p>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">BAT-Nav: Budget-Aware Arbitration and Termination for Long-Horizon Semantic Navigation</h1>
+      <p class="mt-5 max-w-4xl text-lg leading-relaxed text-gray-600">
+        BAT-Nav is a training-free online goal arbitrator for budgeted long-horizon semantic navigation. It sits above a frozen open-vocabulary navigation backbone and updates the mission goal queue through four explicit interventions: Persist, Switch, Abort, and Commit.
+      </p>
+
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="https://arxiv.org/abs/2605.16932" class="inline-flex items-center rounded-full bg-gray-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-gray-700">View arXiv</a>
+      </div>
+
+      <div class="mt-10 overflow-hidden rounded-[28px] border border-gray-200 bg-white">
+        <img src="/assets/projects/bat-nav-arch.png" alt="BAT-Nav architecture" class="w-full object-contain" />
+      </div>
+
+      <section class="mt-10 rounded-[28px] border border-gray-200 bg-gray-50 p-6 sm:p-8">
+        <h2 class="text-2xl font-semibold">Abstract Summary</h2>
+        <p class="mt-4 text-base leading-relaxed text-gray-600">
+          Long-horizon semantic navigation requires a robot to search for multiple open-vocabulary targets under a finite action budget. BAT-Nav targets the budget-monopolization failure mode, where a low-yield or occluded goal consumes most of the episode budget and prevents later goals from being attempted.
+        </p>
+        <p class="mt-4 text-base leading-relaxed text-gray-600">
+          The arbitrator separates allocation from verification. Search feasibility and budget retention drive Abort and Switch decisions, while verification sufficiency controls Commit decisions. This keeps the low-level navigator frozen while changing which semantic goal retains execution priority.
+        </p>
+      </section>
+
+      <section class="mt-10 grid gap-6 lg:grid-cols-2">
+        <article class="rounded-[28px] border border-gray-200 bg-white p-4">
+          <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
+            <source src="/assets/projects/morn-sim-demo.mp4" type="video/mp4" />
+          </video>
+          <h2 class="mt-4 text-xl font-semibold">Simulation Demo</h2>
+          <p class="mt-3 text-base leading-relaxed text-gray-600">
+            Simulation runs illustrate how online goal arbitration changes goal priority under shared budget constraints rather than replacing the frozen navigation backbone.
+          </p>
+        </article>
+        <article class="rounded-[28px] border border-gray-200 bg-white p-4">
+          <video controls playsinline class="w-full rounded-2xl border border-gray-200 bg-black">
+            <source src="/assets/projects/morn-real-demo.mp4" type="video/mp4" />
+          </video>
+          <h2 class="mt-4 text-xl font-semibold">Real-Robot Demo</h2>
+          <p class="mt-3 text-base leading-relaxed text-gray-600">
+            The physical-system check verifies that the BAT-Nav queue interface can connect to a real navigation stack as a qualitative software-boundary test.
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

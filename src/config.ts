@@ -33,18 +33,18 @@ export const siteConfig = {
   ],
   publications: [
     {
-      name: "MORN: Metacognitive Object-Goal Regulation for Resource-Rational Long-Horizon Navigation",
+      name: "BAT-Nav: Budget-Aware Arbitration and Termination for Long-Horizon Semantic Navigation",
       authors:
-        "<strong>Xi Lin</strong>, Jiayi Li, Kangyi Wu, Jiaqiao Tang, Qingrong He, and Lin Zhao",
-      venue: "RA-L",
+        "<strong>Xi Lin</strong>, Kangyi Wu, Jiayi Li, Jiaqiao Tang, Qingrong He, and Lin Zhao",
+      venue: "RAL 2026",
       status: "Under Review | First Author",
-      subtitle: "RA-L | Under Review | First Author",
+      subtitle: "RAL 2026 | Under Review | First Author",
       description:
-        "A resource-rational long-horizon navigation framework that adds a metacognitive executive layer on top of frozen navigation backbones, explicitly regulating multi-goal missions under time and budget constraints.",
-      image: "/assets/projects/morn-arch.png",
-      link: "/publications/morn",
-      pdf: "/papers/MORN.pdf",
-      skills: ["World Models", "ObjectNav", "Long-Horizon Planning"],
+        "A training-free online goal arbitrator above a frozen VLM-guided navigation backbone, regulating Persist, Switch, Abort, and Commit decisions to reduce budget monopolization in long-horizon semantic navigation.",
+      image: "/assets/projects/bat-nav-arch.png",
+      link: "/publications/bat-nav",
+      arxiv: "https://arxiv.org/abs/2605.16932",
+      skills: ["Semantic Navigation", "ObjectNav", "Goal Arbitration"],
     },
     {
       name: "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
@@ -57,7 +57,7 @@ export const siteConfig = {
         "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
       image: "/assets/projects/dual-anchor-arch.png",
       link: "/publications/dual-anchoring",
-      pdf: "/papers/Dual-Anchoring.pdf",
+      arxiv: "https://arxiv.org/abs/2604.17473",
       skills: ["VLN", "Video-LLMs", "Landmark-Centric World Models"],
     },
     {
@@ -121,7 +121,7 @@ export const siteConfig = {
       bullets: [
         "Systematically evaluated real-world VLN solutions and built a full pipeline for data collection, model finetuning, and outdoor deployment.",
         "Developed a VLM-based zero-shot ObjectNav direction for indoor settings and explored transferable deployment from VLM or VLFM systems to real robots.",
-        "This internship led to follow-up work on MORN and Dual-Anchoring for long-horizon navigation and world-model-aware decision making.",
+        "This internship led to follow-up work on BAT-Nav and Dual-Anchoring for long-horizon navigation and world-model-aware decision making.",
       ],
     },
     {

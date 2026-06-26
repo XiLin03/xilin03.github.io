@@ -53,12 +53,12 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
                       View details
                     </a>
                     {
-                      publication.pdf && (
+                      publication.arxiv && (
                         <a
-                          href={publication.pdf}
+                          href={publication.arxiv}
                           class="inline-flex items-center rounded-full border border-gray-300 px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:border-gray-900 hover:text-gray-900"
                         >
-                          Download PDF
+                          arXiv
                         </a>
                       )
                     }
