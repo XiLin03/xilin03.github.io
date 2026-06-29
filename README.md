@@ -1,8 +1,7 @@
 <h2 align="center">Xi Lin</h2>
 
 <p align="center">
-  M.S. Robotics @ Johns Hopkins University<br>
-  Embodied AI / World-Action Models / Robot Learning
+  M.S. Robotics @ JHU 丨 WAM Intern @ Huawei<br>
 </p>
 
 <p align="center">
@@ -24,9 +23,7 @@
 
 ## About
 
-I am an M.S. student in Robotics at Johns Hopkins University. My current work focuses on **World-Action Models (WAMs)** and embodied robot learning, especially action-sensitive pretraining for dexterous manipulation from egocentric human videos.
-
-Previously, I worked on long-horizon embodied navigation at JD Explore Academy, humanoid action data and simulation at Xiaomi Robotics, and robot locomotion / dynamics modeling at Tsinghua AIR and Johns Hopkins Terradynamics Lab.
+I am an M.S. student in Robotics at JHU and working as an WAMintern in Huawei. Previously, I worked on VLN at JD Explore Academy, WBC at Xiaomi Robotics, and locomotion at Tsinghua AIR and JHU Terradynamics Lab.
 
 ## Selected Work
 
@@ -46,13 +43,6 @@ Previously, I worked on long-horizon embodied navigation at JD Explore Academy, 
 
 * **Dalian University of Technology**
   B.S. in Mechanical Engineering, minoring in Automation, 2021–2025
-
-## Research Interests
-
-* World-Action Models and embodied world models
-* Dexterous manipulation and egocentric action data
-* Vision-language navigation and embodied decision-making
-* Humanoid motion retargeting and robot learning
 
 ## Contact
 
