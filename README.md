@@ -1,6 +1,6 @@
 <h3 align="center">Hi, this is Xi Lin.</h3>
 
-[![Homepage](https://img.shields.io/badge/Homepage-xilin03.github.io-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://xilin03.github.io/)
+<h3 align="center">[![Homepage](https://img.shields.io/badge/Homepage-xilin03.github.io-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://xilin03.github.io/)
 [![GScholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?hl=zh-CN&user=JSBomI4AAAAJ)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-xilin--jhu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/xilin-jhu/)
 [![Resume](https://img.shields.io/badge/Resume-Available-brightgreen.svg?style=for-the-badge)](https://xilin03.github.io/Xi-Lin-Resume.pdf)
