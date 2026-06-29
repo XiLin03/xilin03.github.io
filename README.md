@@ -14,9 +14,6 @@
   <a href="https://www.linkedin.com/in/xilin-jhu/">
     <img src="https://img.shields.io/badge/LinkedIn-xilin--jhu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <a href="mailto:xilin03@outlook.com">
-    <img src="https://img.shields.io/badge/Email-xilin03%40outlook.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
-  </a>
 </p>
 
 ---
