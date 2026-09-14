@@ -22,7 +22,7 @@
 
 ## About
 
-I am an M.S. student in Robotics at Johns Hopkins University. Previously, I was an Embodied Foundation WAM Pretraining Intern at Yinwang. I am currently looking for Ph.D. opportunities for Spring/Fall 2027 admission and working on research related to world-action models (WAMs) and vision-language-action (VLA) systems. I welcome collaborations in any form - feel free to reach out.
+I am an M.S. student in Robotics at Johns Hopkins University, working on robot learning and embodied AI. My research centers on world models, VLA systems, and long-horizon embodied decision-making, with a particular interest in physically grounded and generalizable manipulation. I am currently a research intern at Yinwang, working on world-action models for dexterous manipulation with Dr. Zhaowen Li while also studying continual VLA learning at JHU. Previously, I worked on embodied navigation at JD Explore Academy, robot motion and control at Xiaomi Robotics, humanoid locomotion at Tsinghua AIR with Prof. Wenchao Ding, and robot dynamics and terradynamics at JHU with Prof. Chen Li. I am applying for Fall 2027 Ph.D. programs and am open to on-site research opportunities from late August 2026 through Spring 2027.
 
 ## Selected Work
 
