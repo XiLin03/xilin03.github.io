@@ -1,12 +1,12 @@
 export const siteConfig = {
   name: "Xi Lin",
-  title: "JHU",
+  title: "M.S. Student in Robotics at JHU",
   description:
-    "Personal academic website of Xi Lin, focused on embodied AI, world models, vision-language action and navigation, and robot control.",
+    "Personal academic website of Xi Lin, focused on embodied AI, world-action models, vision-language-action systems, navigation, and robot control.",
   accentColor: "#002FA7",
   heroInterestsText: "Research Interests: WAM\u4e28VLA\u4e28VLN\u4e28WBC.",
   heroStatusText:
-    "Currently seeking remote research internship opportunities \u{1F44B}",
+    "Currently looking for Ph.D. opportunities for Spring/Fall 2027 admission and open to research collaborations \u{1F44B}",
   social: {
     email: "xlin49@jhu.edu",
     emailSecondary: "xilin03@outlook.com",
@@ -18,8 +18,8 @@ export const siteConfig = {
     cvCn: "/LinXi-CV-CN.pdf",
   },
   about: [
-    "I am an M.S. student in Robotics at Johns Hopkins University. My recent work focuses on embodied AI systems that connect real-robot deployment, long-horizon reasoning, and control-aware decision making.",
-    "During my graduate path, I started from whole-body control and locomotion, then moved into vision-language navigation and world-model-oriented embodied systems. I am now especially interested in the boundary between world/action models and vision-language action systems, and I am actively seeking remote research internship opportunities.",
+    "I am an M.S. student in Robotics at Johns Hopkins University.",
+    "Previously, I was an Embodied Foundation WAM Pretraining Intern at Yinwang. I am currently looking for Ph.D. opportunities for Spring/Fall 2027 admission and working on research related to world-action models (WAMs) and vision-language-action (VLA) systems. I welcome collaborations in any form.",
   ],
   aboutTags: [
     "World Models",
@@ -33,14 +33,14 @@ export const siteConfig = {
   ],
   publications: [
     {
-      name: "BAT-Nav: Budget-Aware Arbitration and Termination for Long-Horizon Semantic Navigation",
+      name: "BAT-Nav: Belief-Based Arbitration and Termination via Remaining Discoverability in Multi-Goal Semantic Navigation",
       authors:
         "<strong>Xi Lin</strong>, Kangyi Wu, Jiayi Li, Jiaqiao Tang, Qingrong He, and Lin Zhao",
       venue: "RAL 2026",
       status: "Under Review | First Author",
       subtitle: "RAL 2026 | Under Review | First Author",
       description:
-        "A training-free online goal arbitrator above a frozen VLM-guided navigation backbone, regulating Persist, Switch, Abort, and Commit decisions to reduce budget monopolization in long-horizon semantic navigation.",
+        "A training-free online goal arbitrator above a frozen navigation executor, estimating remaining discoverability and using marginal return to regulate Persist, Switch, Abort, and Commit decisions under a shared action budget.",
       image: "/assets/projects/bat-nav-arch.png",
       link: "/publications/bat-nav",
       arxiv: "https://arxiv.org/abs/2605.16932",

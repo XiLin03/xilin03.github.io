@@ -6,15 +6,15 @@ import "../../styles/global.css";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>BAT-Nav - Xi Lin</title>
+    <title>BAT-Nav: Belief-Based Arbitration and Termination via Remaining Discoverability in Multi-Goal Semantic Navigation - Xi Lin</title>
   </head>
   <body class="bg-white text-gray-900">
     <main class="mx-auto max-w-6xl px-6 py-16 sm:px-10">
       <a href="/" class="text-sm font-medium text-gray-500 hover:text-gray-900">Back to home</a>
       <p class="mt-6 text-sm font-mono text-blue-600">RAL 2026 | Under Review | First Author</p>
-      <h1 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">BAT-Nav: Budget-Aware Arbitration and Termination for Long-Horizon Semantic Navigation</h1>
+      <h1 class="mt-3 text-4xl font-bold tracking-tight sm:text-5xl">BAT-Nav: Belief-Based Arbitration and Termination via Remaining Discoverability in Multi-Goal Semantic Navigation</h1>
       <p class="mt-5 max-w-4xl text-lg leading-relaxed text-gray-600">
-        BAT-Nav is a training-free online goal arbitrator for budgeted long-horizon semantic navigation. It sits above a frozen open-vocabulary navigation backbone and updates the mission goal queue through four explicit interventions: Persist, Switch, Abort, and Commit.
+        BAT-Nav is a training-free online goal arbitrator for budgeted long-horizon semantic navigation. It estimates remaining discoverability - the probability that a frozen executor can complete a goal within additional budget - and uses marginal return to regulate four explicit interventions: Persist, Switch, Abort, and Commit.
       </p>
 
       <div class="mt-8 flex flex-wrap gap-3">
@@ -22,7 +22,7 @@ import "../../styles/global.css";
       </div>
 
       <div class="mt-10 overflow-hidden rounded-[28px] border border-gray-200 bg-white">
-        <img src="/assets/projects/bat-nav-arch.png" alt="BAT-Nav architecture" class="w-full object-contain" />
+        <img src="/assets/projects/bat-nav-arch.png" alt="BAT-Nav architecture showing remaining discoverability and task arbitration" class="w-full object-contain" />
       </div>
 
       <section class="mt-10 rounded-[28px] border border-gray-200 bg-gray-50 p-6 sm:p-8">
