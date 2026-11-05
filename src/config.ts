@@ -13,9 +13,15 @@ export const publications = [
   { title: 'Dual-Anchoring: Addressing State Drift in Vision-Language Navigation', authors: ['Kangyi Wu', 'Pengna Li', 'Kailin Lyu', 'Xi Lin', 'Lin Zhao', 'Qingrong He', 'Jinjun Wang', 'Jianyi Liu'], venue: 'ECCV 2026', url: 'https://arxiv.org/abs/2604.17473' },
   { title: 'BAT-Nav: Belief-Based Arbitration and Termination via Remaining Discoverability in Multi-Goal Semantic Navigation', authors: ['Xi Lin', 'Kangyi Wu', 'Jiayi Li', 'Jiaqiao Tang', 'Qingrong He', 'Lin Zhao'], venue: 'ICRA 2027 · Under Review', url: 'https://arxiv.org/abs/2605.16932' },
 ];
+// Contribution symbols follow the official paper title pages; author order is unchanged.
+export const contributionMarks: Record<string, Record<string, string>> = {
+  'https://arxiv.org/abs/2609.33944': { 'Xi Lin': '*', 'Feihong Zhang': '*', 'Yulong Shi': '*' },
+  'https://arxiv.org/abs/2610.39367': { 'Feihong Zhang': '*', 'Xi Lin': '*', 'Yulong Shi': '*' },
+  'https://arxiv.org/abs/2604.17473': { 'Kangyi Wu': '†', 'Pengna Li': '†', 'Kailin Lyu': '‡', 'Xi Lin': '‡' },
+};
 export const industry = [
-  { company: 'Xiaomi Robotics', description: 'Humanoid robot control and simulation validation' },
-  { company: 'JD Explore Academy', description: 'Long-horizon vision-language navigation and embodied decision-making' },
-  { company: 'Huawei Automotive BU', description: 'World-action-model pretraining and representation learning for manipulation' },
-  { company: 'Meituan LongCat', description: 'Incoming research intern · Embodied foundation-model pretraining' },
+  { company: 'Meituan LongCat', date: 'Nov 2026 · Incoming', description: 'Research Intern · Embodied Foundation Model Pretraining' },
+  { company: 'Huawei Automotive BU', date: 'Apr 2026 – Sep 2026', description: 'Research Intern · World-Action Model Pretraining & Representation Learning' },
+  { company: 'JD Explore Academy', date: 'Nov 2025 – Apr 2026', description: 'Research Intern · Vision-Language Navigation & Embodied Decision-Making' },
+  { company: 'Xiaomi Robotics', date: 'Aug 2025 – Nov 2025', description: 'Robotics Engineering Intern · Humanoid Whole-Body Control' },
 ];

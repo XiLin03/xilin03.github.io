@@ -1,5 +1,5 @@
 ---
-import { siteConfig, publications, industry } from '../config';
+import { siteConfig, publications, contributionMarks, industry } from '../config';
 import '../styles/global.css';
 ---
 <!doctype html>
@@ -26,7 +26,8 @@ import '../styles/global.css';
       <header class="opening">
         <h1>Xi Lin<span class="name-period" aria-hidden="true">.</span></h1>
         <p>I am an M.S. student in Robotics at <strong>Johns Hopkins University</strong>, focusing on <strong>embodied foundation models for robot manipulation</strong>.</p>
-        <p>I am currently working on <strong>agent-guided world-action models</strong> with <strong>Prof. Jiachen Li</strong> at Georgia Tech. I will also be joining <strong>Meituan LongCat</strong> as a research intern, focusing on embodied foundation-model pretraining.</p>
+        <p>I am currently working on <strong>agent-guided world-action models</strong> with <strong>Prof. Jiachen Li</strong> at Georgia Tech. I am also collaborating with Dr. Ji Zhang at the CMU Robotics Institute on agentic VLA research.</p>
+        <p>I will also be joining <strong>Meituan LongCat</strong> as a research intern, focusing on embodied foundation-model pretraining.</p>
         <p class="application-status">Seeking Fall 2027 Ph.D. opportunities.</p>
         <nav class="contact-links" aria-label="Contact and profiles">
           <a href={`mailto:${siteConfig.social.email}`}>Email</a><span aria-hidden="true">·</span>
@@ -41,17 +42,21 @@ import '../styles/global.css';
           {publications.map(publication => (
             <article class="publication">
               <h3>{publication.title}</h3>
-              <p class="authors">{publication.authors.map((author, index) => <>{index > 0 && ', '}{author === 'Xi Lin' ? <strong>{author}</strong> : author}</>)}</p>
+              <p class="authors">{publication.authors.map((author, index) => <>{index > 0 && ', '}<span class="author-name">{author === 'Xi Lin' ? <strong>{author}</strong> : author}{contributionMarks[publication.url]?.[author] && <sup>{contributionMarks[publication.url][author]}</sup>}</span></>)}</p>
               <p class="publication-meta"><span>{publication.venue}</span><span class="separator" aria-hidden="true">·</span><a href={publication.url} aria-label={`Read ${publication.title} on arXiv`}>arXiv</a></p>
             </article>
           ))}
         </div>
+        <div class="contribution-notes">
+          <p>* Equal contribution</p>
+          <p>Dual-Anchoring: <sup>†</sup> Equal contribution. <sup>‡</sup> These authors contributed equally.</p>
+        </div>
       </section>
       <section class="industry" aria-labelledby="industry-title">
         <h2 id="industry-title">Industry Experience</h2>
-        <ul>{industry.map(item => <li><strong>{item.company}</strong><span class="experience-dash"> — </span><span>{item.description}</span></li>)}</ul>
+        <ol class="timeline">{industry.map(item => <li><p class="experience-date">{item.date}</p><p class="experience-company"><strong>{item.company}</strong></p><p class="experience-description">{item.description}</p></li>)}</ol>
       </section>
-      <footer><span>© {new Date().getFullYear()} Xi Lin</span><span>Robot learning &amp; embodied AI</span></footer>
+      <footer><span>© {new Date().getFullYear()} Xi Lin</span><span class="footer-research">Embodied Foundation Model &amp; Robot Learning</span></footer>
     </main>
   </body>
 </html>
