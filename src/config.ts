@@ -1,189 +1,21 @@
 export const siteConfig = {
-  name: "Xi Lin",
-  title: "M.S. Student in Robotics at JHU",
-  description:
-    "Personal academic website of Xi Lin, focused on embodied AI, world-action models, vision-language-action systems, navigation, and robot control.",
-  accentColor: "#002FA7",
-  heroInterestsText: "Research Interests: World Models | VLA | Embodied Decision-Making.",
-  heroStatusText:
-    "Applying for Fall 2027 Ph.D. programs; open to on-site research opportunities from late August 2026 through Spring 2027.",
+  description: 'Xi Lin — M.S. Robotics at Johns Hopkins University. Embodied foundation models for robot manipulation. Seeking Fall 2027 Ph.D. opportunities.',
   social: {
-    email: "xlin49@jhu.edu",
-    emailSecondary: "xilin03@outlook.com",
-    linkedin: "https://linkedin.com/in/xilin-jhu",
-    github: "https://github.com/xilin03",
-    scholar: "https://scholar.google.com/citations?user=JSBomI4AAAAJ&hl=zh-CN",
-    careerSite: "/Shaun/",
-    cv: "/Xi-Lin-Resume.pdf",
-    cvCn: "/LinXi-CV-CN.pdf",
+    email: 'xlin49@jhu.edu',
+    scholar: 'https://scholar.google.com/citations?user=JSBomI4AAAAJ&hl=zh-CN',
+    linkedin: 'https://linkedin.com/in/xilin-jhu',
+    cv: '/Xi-Lin-Resume.pdf',
   },
-  about: [
-    "I am an M.S. student in Robotics at Johns Hopkins University, working on robot learning and embodied AI. My research centers on world models, VLA systems, and long-horizon embodied decision-making, with a particular interest in physically grounded and generalizable manipulation.",
-    "I am currently a research intern at Yinwang, working on world-action models for dexterous manipulation with Dr. Zhaowen Li while also studying continual VLA learning at JHU. Previously, I worked on embodied navigation at JD Explore Academy, robot motion and control at Xiaomi Robotics, humanoid locomotion at Tsinghua AIR with Prof. Wenchao Ding, and robot dynamics and terradynamics at JHU with Prof. Chen Li. I am applying for Fall 2027 Ph.D. programs and am open to on-site research opportunities from late August 2026 through Spring 2027.",
-  ],
-  aboutTags: [
-    "World Models",
-    "Vision-Language Action",
-    "VLN / ObjectNav",
-    "Real-Robot Deployment",
-    "Whole-Body Control",
-    "Retargeting",
-    "RL / Sim2Real",
-    "Dynamics Modeling",
-  ],
-  publications: [
-    {
-      name: "BAT-Nav: Belief-Based Arbitration and Termination via Remaining Discoverability in Multi-Goal Semantic Navigation",
-      authors:
-        "<strong>Xi Lin</strong>, Kangyi Wu, Jiayi Li, Jiaqiao Tang, Qingrong He, and Lin Zhao",
-      venue: "RAL 2026",
-      status: "Under Review | First Author",
-      subtitle: "RAL 2026 | Under Review | First Author",
-      description:
-        "A training-free online goal arbitrator above a frozen navigation executor, estimating remaining discoverability and using marginal return to regulate Persist, Switch, Abort, and Commit decisions under a shared action budget.",
-      image: "/assets/projects/bat-nav-arch.png",
-      link: "/publications/bat-nav",
-      arxiv: "https://arxiv.org/abs/2605.16932",
-      skills: ["Semantic Navigation", "ObjectNav", "Goal Arbitration"],
-    },
-    {
-      name: "Dual-Anchoring: Addressing State Drift in Vision-Language Navigation",
-      authors:
-        "Kangyi Wu, <strong>Xi Lin</strong>, Pengna Li, Kailin Lyu, Lin Zhao, Qingrong He, Jinjun Wang, and Jianyi Liu",
-      venue: "ECCV 2026",
-      status: "Second Author",
-      subtitle: "ECCV 2026 | Second Author",
-      description:
-        "A dual-anchoring framework for long-horizon VLN that explicitly addresses progress drift and memory drift through instruction-progress anchoring and landmark-centric world-model supervision.",
-      image: "/assets/projects/dual-anchor-arch.png",
-      link: "/publications/dual-anchoring",
-      arxiv: "https://arxiv.org/abs/2604.17473",
-      skills: ["VLN", "Video-LLMs", "Landmark-Centric World Models"],
-    },
-    {
-      name: "Research on Object Detection of Robotic Based on Convolutional Neural Network",
-      authors: "<strong>Xi Lin</strong>, Yuge Chen, Donglai Liu",
-      venue: "IEEE IPIC 2023",
-      status: "First Author",
-      subtitle: "IEEE IPIC 2023 | First Author",
-      description:
-        "An earlier competition-oriented project that combined YOLOv5 perception with VINS-Fusion for UAV-style visual navigation and target-aware motion.",
-      image: "/assets/projects/cnn-accuracy-plot.png",
-      link: null,
-      skills: ["CNN", "YOLOv5", "VINS-Fusion"],
-    },
-  ],
-  projects: [
-    {
-      name: "Embodied Navigation for Real-World Instruction Following",
-      subtitle: "JD Explore Academy | Embodied Navigation Algorithm Intern",
-      description:
-        "Built real-robot VLN and zero-shot ObjectNav pipelines covering evaluation, data collection, finetuning, and outdoor deployment.",
-      image: "/assets/projects/jd-robot-demo.png",
-      link: "/projects/jd-navigation",
-      skills: ["World Models", "VLN", "ObjectNav", "Real-Robot"],
-    },
-    {
-      name: "Humanoid Motion Retargeting and Skill Simulation",
-      subtitle: "Xiaomi Robotics | Robotics Engineer Intern",
-      description:
-        "Worked on retargeting, simulation-system construction, and low-level behavior training for assembly-style humanoid tasks.",
-      image: "/assets/projects/xiaomi-cover.png",
-      link: "/projects/xiaomi-humanoid",
-      skills: ["Retargeting", "WBC", "RL", "Sim2Sim"],
-    },
-    {
-      name: "Humanoid Locomotion in Complex Terrain",
-      subtitle: "AIR Tsinghua | Embodied AI Research Intern",
-      description:
-        "Built terrain generation, curriculum training, and ROS2 deployment pipelines for humanoid locomotion and sim-to-real transfer.",
-      image: "/assets/projects/control-terrain.png",
-      link: "/projects/air-locomotion",
-      skills: ["Robot Control", "RL", "ROS2", "Sim-to-Real"],
-    },
-    {
-      name: "Dynamics Modeling for Cockroach-Inspired Robots",
-      subtitle: "JHU Terradynamics Lab | Research Assistant",
-      description:
-        "Modeled robot dynamics and obstacle-avoidance trajectories with LSTM-based forecasting and simulation-validation pipelines.",
-      image: "/assets/projects/jhu-trajectory-model.png",
-      link: "/projects/jhu-dynamics",
-      skills: ["Dynamics Modeling", "LSTM", "C++ / MATLAB", "Trajectory Analysis"],
-    },
-  ],
-  experience: [
-    {
-      company: "JD Explore Academy",
-      logo: "JD",
-      logoImage: "/assets/logos/jd.jpg",
-      title: "Embodied Navigation Algorithm Intern",
-      dateRange: "Nov 2025 - Mar 2026",
-      bullets: [
-        "Systematically evaluated real-world VLN solutions and built a full pipeline for data collection, model finetuning, and outdoor deployment.",
-        "Developed a VLM-based zero-shot ObjectNav direction for indoor settings and explored transferable deployment from VLM or VLFM systems to real robots.",
-        "This internship led to follow-up work on BAT-Nav and Dual-Anchoring for long-horizon navigation and world-model-aware decision making.",
-      ],
-    },
-    {
-      company: "Xiaomi Robotics",
-      logo: "mi",
-      logoImage: "/assets/logos/xiaomi.png",
-      title: "Robotics Engineer Intern",
-      dateRange: "Sep 2025 - Nov 2025",
-      bullets: [
-        "Converted factory assembly videos into SMPL trajectories and retargeted human motions to humanoids for reusable downstream training data.",
-        "Built simulation environments and trained low-level tracking behaviors for dexterous assembly and payload-related robot tasks.",
-        "Benchmarked sim2sim and RL pipelines in a unified physics stack to support later real-world iteration.",
-      ],
-    },
-    {
-      company: "Institute for AI Industry Research, Tsinghua University",
-      logo: "AIR",
-      logoImage: "/assets/logos/air.png",
-      title: "Embodied AI Research Intern",
-      dateRange: "Jan 2025 - Aug 2025",
-      bullets: [
-        "Built parameterized terrain generation and curriculum-based RL training for humanoid locomotion in complex environments.",
-        "Completed sim-to-real transfer from Isaac Gym to Unitree H1 through ROS2 deployment.",
-        "Used this stage as a foundation for later work in navigation, SLAM-aware robotics systems, and embodied AI.",
-      ],
-    },
-    {
-      company: "Johns Hopkins University Terradynamics Lab",
-      logo: "JHU",
-      logoImage: "/assets/logos/jhu.ico",
-      title: "Research Assistant",
-      dateRange: "Jun 2024 - Dec 2024",
-      bullets: [
-        "Built LSTM-based motion prediction pipelines using fused IMU and force data for cockroach-inspired robot dynamics.",
-        "Developed C++ and MATLAB simulation-validation tooling for trajectory modeling and nonlinear constraint analysis.",
-        "This earlier stage formed my foundation in data-centric robotics experimentation and modeling.",
-      ],
-    },
-  ],
-  education: [
-    {
-      school: "Johns Hopkins University",
-      logo: "JHU",
-      logoImage: "/assets/logos/jhu.ico",
-      degree: "M.S. in Robotics",
-      dateRange: "Expected Jun 2027",
-      achievements: [
-        "Current focus: embodied AI, long-horizon navigation, robot control, and multimodal robotics systems.",
-      ],
-    },
-    {
-      school: "Dalian University of Technology",
-      logo: "DUT",
-      logoImage: "/assets/logos/dut.svg",
-      degree: "B.S. in Mechanical Engineering",
-      dateRange: "Jun 2025",
-      achievements: [
-        "Minor in Automation.",
-        "Joint Program with UC Irvine.",
-        "National 3D Design Competition, Third Prize.",
-        "DUT Sci-Tech Innovation Scholarship.",
-      ],
-    },
-  ],
 };
+export const publications = [
+  { title: 'ReSync: Re-Aligning the Two Clocks of Asynchronous World-Action Models', authors: ['Xi Lin', 'Feihong Zhang', 'Yulong Shi', 'Yanghong Mei', 'Zuxing Lu', 'Xiaofan Zhu', 'Zihao Liang', 'Zhirui Gao', 'Zhaowen Li'], venue: 'ICLR 2027 · Under Review', url: 'https://arxiv.org/abs/2609.33944' },
+  { title: 'Utility-WAM: Correcting Future-Induced Action Changes', authors: ['Feihong Zhang', 'Xi Lin', 'Yulong Shi', 'Zuxing Lu', 'Yanghong Mei', 'Zhaopeng Gu', 'Tingyu Yuan', 'Zihao Liang', 'Yinuo Wang', 'Zhaowen Li'], venue: 'ICLR 2027 · Under Review', url: 'https://arxiv.org/abs/2610.39367' },
+  { title: 'Dual-Anchoring: Addressing State Drift in Vision-Language Navigation', authors: ['Kangyi Wu', 'Pengna Li', 'Kailin Lyu', 'Xi Lin', 'Lin Zhao', 'Qingrong He', 'Jinjun Wang', 'Jianyi Liu'], venue: 'ECCV 2026', url: 'https://arxiv.org/abs/2604.17473' },
+  { title: 'BAT-Nav: Belief-Based Arbitration and Termination via Remaining Discoverability in Multi-Goal Semantic Navigation', authors: ['Xi Lin', 'Kangyi Wu', 'Jiayi Li', 'Jiaqiao Tang', 'Qingrong He', 'Lin Zhao'], venue: 'ICRA 2027 · Under Review', url: 'https://arxiv.org/abs/2605.16932' },
+];
+export const industry = [
+  { company: 'Xiaomi Robotics', description: 'Humanoid robot control and simulation validation' },
+  { company: 'JD Explore Academy', description: 'Long-horizon vision-language navigation and embodied decision-making' },
+  { company: 'Huawei Automotive BU', description: 'World-action-model pretraining and representation learning for manipulation' },
+  { company: 'Meituan LongCat', description: 'Incoming research intern · Embodied foundation-model pretraining' },
+];

@@ -1,200 +1,57 @@
 ---
-import { siteConfig } from "../config";
-import "../styles/barron.css";
-
-const showCareerSections = false;
-const showProjects = false;
+import { siteConfig, publications, industry } from '../config';
+import '../styles/global.css';
 ---
-
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={siteConfig.description} />
-    <title>Xi Lin | JHU</title>
+    <meta name="theme-color" content="#faf9f6" />
+    <meta property="og:title" content="Xi Lin — Robot Learning & Embodied AI" />
+    <meta property="og:description" content={siteConfig.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xilin03.github.io/" />
+    <link rel="canonical" href="https://xilin03.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
+    <title>Xi Lin — Robot Learning &amp; Embodied AI</title>
   </head>
   <body>
-    <table class="page-table"><tbody>
-      <tr>
-        <td>
-          <table class="page-table"><tbody>
-            <tr>
-              <td class="intro-cell">
-                <p class="name">{siteConfig.name}</p>
-                <p>
-                  I am an <strong>M.S. student in Robotics</strong> at <strong><a href="https://www.jhu.edu/">Johns Hopkins University</a></strong>, working on robot learning and embodied AI. My research centers on <strong>world models, VLA systems, and long-horizon embodied decision-making</strong>, with a particular interest in physically grounded and generalizable manipulation.
-                </p>
-                <p>
-                  I am currently a research intern at <strong>Yinwang</strong>, working on world-action models for dexterous manipulation with Dr. <a href="https://scholar.google.com.hk/citations?user=A1__8cUAAAAJ&hl=zh-CN&oi=sra">Zhaowen Li</a> while also studying continual VLA learning at JHU. Previously, I worked on embodied navigation at <strong>JD Explore Academy</strong> with Dr. <a href="https://scholar.google.com/citations?user=K1CvzXcAAAAJ&hl=zh-CN">Lin Zhao</a> and Prof. <a href="http://www.linliang.net/">Lin Liang</a>, robot motion and control at <strong>Xiaomi Robotics</strong>, humanoid locomotion at <strong>Tsinghua AIR</strong> with Prof. Wenchao Ding, and robot dynamics and terradynamics at JHU with Prof. <a href="https://me.jhu.edu/faculty/chen-li/">Chen Li</a>.
-                </p>
-                <p>
-                  I am applying for <strong>Fall 2027 Ph.D. programs</strong> and am open to on-site research opportunities from late August 2026 through Spring 2027.
-                </p>
-                <p class="link-line">
-                  <a href={`mailto:${siteConfig.social.email}`}>Email</a> &nbsp;/&nbsp;
-                  <a href={siteConfig.social.cv}>CV</a> &nbsp;/&nbsp;
-                  <a href={siteConfig.social.scholar}>Scholar</a>
-                  <!-- LinkedIn and GitHub links are temporarily hidden.
-                  &nbsp;/&nbsp;
-                  <a href="https://linkedin.com/in/xilin-jhu">LinkedIn</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/xilin03">GitHub</a>
-                  -->
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table class="page-table"><tbody>
-            <tr>
-              <td class="section-cell">
-                <h2>Research</h2>
-                <p>
-                  My research focuses on <strong>model-side robot learning for generalizable manipulation</strong>. I am interested in how robots can build physically meaningful predictions, retain reusable capabilities from experience, and use them for coherent decision-making over long horizons.
-                </p>
-                <p>
-                  More broadly, I study <strong>embodied coherence</strong>: how prediction, learned capability, and executed behavior can remain grounded in the same physical change.
-                </p>
-                <ul class="compact-list">
-                  <li><strong>World Models / WAMs.</strong> Physical prediction, action-conditioned representations, uncertainty, and context transfer for manipulation.</li>
-                  <li><strong>VLA &amp; Continual Robot Learning.</strong> Skill representation, capability reuse and composition, and continual adaptation.</li>
-                  <li><strong>Embodied Decision-Making.</strong> Long-horizon reasoning, verification, and planning under uncertainty.</li>
-                </ul>
-                <p><em>Earlier work in humanoid locomotion, whole-body control, and robot dynamics provides the systems background for this research.</em></p>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table class="page-table"><tbody>
-            <tr>
-              <td class="section-cell">
-                <h2>Publications</h2>
-              </td>
-            </tr>
-          </tbody></table>
-
-          <table class="entry-table"><tbody>
-            {siteConfig.publications.map((publication) => (
-              <tr>
-                <td class="thumb-cell">
-                  <a href={publication.link}>
-                    <img class="thumb-image" src={publication.image} alt={publication.name} />
-                  </a>
-                </td>
-                <td class="entry-cell">
-                  <a href={publication.link}>
-                    <span class="papertitle">{publication.name}</span>
-                  </a>
-                  <br />
-                  <span set:html={publication.authors}></span>
-                  <br />
-                  <em><strong>{publication.venue}</strong>{publication.status && ` | ${publication.status}`}</em>
-                  <br />
-                  <a href={publication.link}>project page</a>
-                  {publication.arxiv && <span> / <a href={publication.arxiv}>arXiv</a></span>}
-                  <p>{publication.description}</p>
-                </td>
-              </tr>
-            ))}
-          </tbody></table>
-
-          {showProjects && (
-            <>
-              <table class="page-table"><tbody>
-                <tr>
-                  <td class="section-cell">
-                    <h2>Projects</h2>
-                  </td>
-                </tr>
-              </tbody></table>
-
-              <table class="entry-table"><tbody>
-                {siteConfig.projects.map((project) => (
-                  <tr>
-                    <td class="thumb-cell">
-                      <a href={project.link}>
-                        <img class="thumb-image" src={project.image} alt={project.name} />
-                      </a>
-                    </td>
-                    <td class="entry-cell">
-                      <a href={project.link}>
-                        <span class="papertitle">{project.name}</span>
-                      </a>
-                      <br />
-                      <em>{project.subtitle}</em>
-                      <br />
-                      <a href={project.link}>project page</a>
-                      <p>{project.description}</p>
-                    </td>
-                  </tr>
-                ))}
-              </tbody></table>
-            </>
-          )}
-
-          {showCareerSections && (
-            <table class="page-table"><tbody>
-              <tr>
-                <td class="section-cell">
-                  <h2>Experience</h2>
-                  {siteConfig.experience.map((exp) => (
-                    <table class="mini-entry"><tbody>
-                      <tr>
-                        <td class="mini-logo-cell">
-                          <div class="mini-logo">
-                            <img src={exp.logoImage} alt={`${exp.company} logo`} />
-                          </div>
-                        </td>
-                        <td class="mini-content">
-                          <p class="mini-title">
-                            <strong>{exp.title}</strong>, <strong>{exp.company}</strong>
-                          </p>
-                          <p class="mini-date"><em>{exp.dateRange}</em></p>
-                          <ul class="mini-bullets">
-                            {exp.bullets.slice(0, 2).map((bullet) => <li>{bullet}</li>)}
-                          </ul>
-                        </td>
-                      </tr>
-                    </tbody></table>
-                  ))}
-                </td>
-              </tr>
-            </tbody></table>
-          )}
-
-          {showCareerSections && (
-            <table class="page-table"><tbody>
-              <tr>
-                <td class="section-cell">
-                  <h2>Education</h2>
-                  {siteConfig.education.map((edu) => (
-                    <table class="mini-entry"><tbody>
-                      <tr>
-                        <td class="mini-logo-cell">
-                          <div class="mini-logo">
-                            <img src={edu.logoImage} alt={`${edu.school} logo`} />
-                          </div>
-                        </td>
-                        <td class="mini-content">
-                          <p class="mini-title">
-                            <strong>{edu.school}</strong>, {edu.degree}
-                          </p>
-                          <p class="mini-date"><em>{edu.dateRange}</em></p>
-                          <ul class="mini-bullets">
-                            {edu.achievements.map((achievement) => <li>{achievement}</li>)}
-                          </ul>
-                        </td>
-                      </tr>
-                    </tbody></table>
-                  ))}
-                </td>
-              </tr>
-            </tbody></table>
-          )}
-        </td>
-      </tr>
-    </tbody></table>
+    <a class="skip-link" href="#publications">Skip to publications</a>
+    <main>
+      <header class="opening">
+        <h1>Xi Lin<span class="name-period" aria-hidden="true">.</span></h1>
+        <p>I am an M.S. student in Robotics at <strong>Johns Hopkins University</strong>, focusing on <strong>embodied foundation models for robot manipulation</strong>.</p>
+        <p>I am currently working on <strong>agent-guided world-action models</strong> with <strong>Prof. Jiachen Li</strong> at Georgia Tech. I will also be joining <strong>Meituan LongCat</strong> as a research intern, focusing on embodied foundation-model pretraining.</p>
+        <p class="application-status">Seeking Fall 2027 Ph.D. opportunities.</p>
+        <nav class="contact-links" aria-label="Contact and profiles">
+          <a href={`mailto:${siteConfig.social.email}`}>Email</a><span aria-hidden="true">·</span>
+          <a href={siteConfig.social.scholar}>Google Scholar</a><span aria-hidden="true">·</span>
+          <a href={siteConfig.social.linkedin}>LinkedIn</a><span aria-hidden="true">·</span>
+          <a href={siteConfig.social.cv}>CV</a>
+        </nav>
+      </header>
+      <section id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Selected Publications</h2>
+        <div class="publications">
+          {publications.map(publication => (
+            <article class="publication">
+              <h3>{publication.title}</h3>
+              <p class="authors">{publication.authors.map((author, index) => <>{index > 0 && ', '}{author === 'Xi Lin' ? <strong>{author}</strong> : author}</>)}</p>
+              <p class="publication-meta"><span>{publication.venue}</span><span class="separator" aria-hidden="true">·</span><a href={publication.url} aria-label={`Read ${publication.title} on arXiv`}>arXiv</a></p>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section class="industry" aria-labelledby="industry-title">
+        <h2 id="industry-title">Industry Experience</h2>
+        <ul>{industry.map(item => <li><strong>{item.company}</strong><span class="experience-dash"> — </span><span>{item.description}</span></li>)}</ul>
+      </section>
+      <footer><span>© {new Date().getFullYear()} Xi Lin</span><span>Robot learning &amp; embodied AI</span></footer>
+    </main>
   </body>
 </html>
