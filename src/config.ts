@@ -8,7 +8,7 @@ export const siteConfig = {
   },
 };
 export const publications = [
-  { title: 'WASD: Writing Agents Steer Dreams', authors: ['Xi Lin', 'Wenqian Zhang', 'Zhixu Li', 'Zhenghao Ni', 'Dayong Fang', 'Jiachen Li'], venue: 'CVPR 2027 · Under Review', role: 'Project lead', url: '' },
+  { title: 'WASD: Writing Agents Steer Dreams', authors: ['Xi Lin', 'Wenqian Zhang', 'Zhixu Li', 'Zhenghao Ni', 'Dayong Fang', 'Jiachen Li'], venue: 'CVPR 2027 · Under Review', role: 'Project lead', url: '', page: 'https://wasd-cvpr.github.io/' },
   { title: 'ReSync: Re-Aligning the Two Clocks of Asynchronous World-Action Models', authors: ['Xi Lin', 'Feihong Zhang', 'Yulong Shi', 'Yanghong Mei', 'Zuxing Lu', 'Xiaofan Zhu', 'Zihao Liang', 'Zhirui Gao', 'Zhaowen Li'], venue: 'ICLR 2027 · Under Review', url: 'https://arxiv.org/abs/2609.33944' },
   { title: 'Utility-WAM: Correcting Future-Induced Action Changes', authors: ['Feihong Zhang', 'Xi Lin', 'Yulong Shi', 'Zuxing Lu', 'Yanghong Mei', 'Zhaopeng Gu', 'Tingyu Yuan', 'Zihao Liang', 'Yinuo Wang', 'Zhaowen Li'], venue: 'ICLR 2027 · Under Review', url: 'https://arxiv.org/abs/2610.39367' },
   { title: 'Dual-Anchoring: Addressing State Drift in Vision-Language Navigation', authors: ['Kangyi Wu', 'Pengna Li', 'Kailin Lyu', 'Xi Lin', 'Lin Zhao', 'Qingrong He', 'Jinjun Wang', 'Jianyi Liu'], venue: 'ECCV 2026', url: 'https://arxiv.org/abs/2604.17473' },
