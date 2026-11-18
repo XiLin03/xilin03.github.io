@@ -42,8 +42,8 @@ import '../styles/global.css';
           {publications.map(publication => (
             <article class="publication">
               <h3>{publication.title}</h3>
-              <p class="authors">{publication.authors.map((author, index) => <>{index > 0 && ', '}<span class="author-name">{author === 'Xi Lin' ? <strong>{author}</strong> : author}{contributionMarks[publication.url]?.[author] && <sup>{contributionMarks[publication.url][author]}</sup>}</span></>)}</p>
-              <p class="publication-meta"><span>{publication.venue}</span><span class="separator" aria-hidden="true">·</span><a href={publication.url} aria-label={`Read ${publication.title} on arXiv`}>arXiv</a></p>
+              <p class="authors">{publication.authors.map((author, index) => <>{index > 0 && ', '}<span class="author-name">{author === 'Xi Lin' ? <strong>{author}</strong> : author}{contributionMarks[publication.url || publication.title]?.[author] && <sup>{contributionMarks[publication.url || publication.title][author]}</sup>}</span></>)}</p>
+              <p class="publication-meta"><span>{publication.venue}</span>{publication.role && <><span class="separator" aria-hidden="true">·</span><span>{publication.role}</span></>}{publication.url && <><span class="separator" aria-hidden="true">·</span><a href={publication.url} aria-label={`Read ${publication.title} on arXiv`}>arXiv</a></>}</p>
             </article>
           ))}
         </div>
