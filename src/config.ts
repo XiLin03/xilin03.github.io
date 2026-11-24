@@ -35,7 +35,6 @@ export const contributionMarks: Record<string, Record<string, string>> = {
   'RepNWM: Effective Representation Modeling and Exploitation for Navigation World Action Models': { 'Yanghong Mei': '*', 'Longteng Guo': '*', 'MingMing Yu': '*' },
 };
 export const experience = [
-  { org: 'Meituan', team: 'LongCat', role: 'Research Intern', focus: 'Embodied Foundation Model Pretraining', date: 'Nov 2026 · Incoming', logo: '/logos/meituan.svg' },
   { org: 'Huawei', team: 'Automotive BU', role: 'Research Intern', focus: 'World-Action Model Pretraining & Representation Learning', date: 'Apr 2026 – Sep 2026', logo: '/logos/huawei.svg' },
   { org: 'JD.com', team: 'Explore Academy', role: 'Research Intern', focus: 'Vision-Language Navigation & Embodied Decision-Making', date: 'Nov 2025 – Apr 2026', logo: '/logos/jd.svg' },
   { org: 'Xiaomi', team: 'Robotics Department', role: 'Robotics Engineering Intern', focus: 'Humanoid Whole-Body Control', date: 'Aug 2025 – Nov 2025', logo: '/logos/xiaomi.svg' },
